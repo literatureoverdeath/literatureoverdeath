@@ -373,6 +373,7 @@ btn.stretched-link a{
 
 .card-text{
     padding: 0em;
+    padding-bottom: 5em;
     max-height:inherit;
     margin:0em;
     text-align:center;
@@ -549,6 +550,10 @@ footer h4{
 
 .card-body{
     padding:0.25rem;
+}
+
+.card{
+    height: 90%;
 }
 
 .homepage figure.palettecolor,.homepage img.palettecolor{
