@@ -110,6 +110,7 @@ html{
 body{
     padding-top: 20px;
     font-family: "Typewriter_Condensed" !important;
+    font-size: 20px;
     overflow-x: hidden;
     width:100%;
     overflow-y: hidden;
@@ -175,7 +176,7 @@ body{
 #coversubtitle {
     font-family: 'La_Beauties';
     text-align: center;
-    font-size: 5vw;
+    font-size: 6vw;
     align-content: flex-end;
     color: #f1f2e6 ;
 }
@@ -283,7 +284,7 @@ body{
 #divfacciata{
     background-color: #0c0d0c;
     color: honeydew;
-    font-size: 110%;
+    font-size: 20px;
     padding-left: 12%;
     padding-right: 12%;
     text-align: justify;
@@ -332,6 +333,9 @@ body{
 
 }
 
+a.nav-link{
+    font-size:22px;
+}
 .nav-item.active> a:hover, .dropdown> a:hover {
     color:wheat; /*ma perché sta roba non funziona?*/
     background-color: #111010;
@@ -400,6 +404,7 @@ p{
 
 .card-title {
     font-family: "Another Typewriter" !important;
+    color:#d8c9a9;
     font-size: 30px;
     display: inline-block;
     margin: auto;
@@ -411,7 +416,7 @@ p{
 h4.card-title a{
     font-family: "Another Typewriter" !important;
     font-size: 30px;
-    color: white;
+    color: #d8c9a9;
 }
 
 @media all and (max-width: 580px) {
@@ -424,16 +429,16 @@ btn.stretched-link a{
 }
 
 .card-text{
-    padding: 0em;
-    padding-bottom: 5em;
+    padding: 1em;
+    padding-bottom: 8em;
     max-height:inherit;
-    margin:0em;
-    text-align:center;
-    font-size: 90%;
+    text-align:justify;
+    font-size: 20px;
     max-width: inherit;
     font-stretch: extra-condensed;
     font-style: normal;
     flex-wrap: wrap;
+    color:#f1f2e6;
 
 }
 
@@ -448,17 +453,14 @@ a {
 #cardBio{
     padding: 1em;
     /*margin: 1em;*/
-    color: #E9D4D8;
-    background-color: #111010;
+    background-color: #405945;
     border-radius: 0px;
 
 }
 
 #cardRethorics{
     padding: 1em;
-    /*margin: 1em;*/
-    color: #E9D4D8;
-    background-color: #111010;
+    background-color: #405945;
     border-radius: 0px;
 
 }
@@ -467,49 +469,39 @@ a {
     padding: 1em;
    /*margin: 1em;*/
     color: #E9D4D8;
-    background-color: #111010;
+    background-color: #405945;
     border-radius: 0px;
 
 }
 
 #cardFreqWords{
     padding: 1em;
-    /*margin: 1em;*/
-    color: #D8CAC2;
-    background-color: #0c0d0c;
+    background-color: #749044;
     border-radius: 0px;
 
 }
 #cardSentAnalysis{
     padding: 1em;
-    /*margin: 1em;*/
-    color: #D8CAC2;
-    background-color: #0c0d0c;
+    background-color: #749044;
     border-radius: 0px;
 
 }
 
 #cardEmotionDetection{
     padding: 1em;
-    /*margin: 1em;*/
-    color: #D8CAC2;
-    background-color: #0c0d0c;
+    background-color: #749044;
     border-radius: 0px;
 
 }#cardTopicModeling{
     padding: 1em;
-    /*margin: 1em;*/
-    color: #D8CAC2;
-    background-color: #0c0d0c;
+    background-color: #749044;
     border-radius: 0px;
 
 }
 
 #cardOntology{
     padding: 1em;
-    /*margin: 1em;*/
-    color: #E1DED4;
-    background-color: #564f4f;
+    background-color: #3c8c74;
     border-radius: 0px;
 
 }
@@ -518,8 +510,7 @@ a {
 #cardRemix{
     padding: 1em;
     /*margin: 1em;*/
-    color: #000000;
-    background-color: #D3CDCD;
+    background-color: #0c0d0c;
     border-radius: 0px;
 }
 
@@ -584,7 +575,7 @@ footer h4{
 
 .crnotice{
     text-align:center;
-    font-family: 'Satisfy', cursive;
+    font-family: 'Another Typewriter';
     color: honeydew;
     font-size: 85%;
 }
@@ -606,6 +597,12 @@ footer h4{
 
 .card{
     height: 90%;
+    border: 9px double #f1f2e6 !important;
+}
+
+.card img{
+    border-radius: 5%;
+    border: 8px double white;
 }
 
 .homepage figure.palettecolor,.homepage img.palettecolor{
