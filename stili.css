@@ -38,6 +38,11 @@
     font-display: swap;
 }
 
+@font-face {
+  font-family: "La Beauties";
+  src: url(../fonts/La Beauties.ttf);
+}
+
 html{
     overflow-x: hidden;
 }
@@ -95,15 +100,15 @@ body{
     }}
 
 
-@media all and (max-width: 650px) { 
+@media all and (max-width: 650px) {
 .container {
   display:block;
-}} 
+}}
 
 #covertitle{
     text-align:center;
     font-size: 10vw !important;
-    font-family: "Rankings Caps";
+    font-family: "La Beauties";
     align-content: flex-end;
 }
 
@@ -117,7 +122,7 @@ body{
 }
 #covertitle{
     font-size: 10vw;
-    
+
 }
 
 
@@ -131,7 +136,7 @@ body{
 
 
 #item{
-    min-height:450px; 
+    min-height:450px;
     background-size:cover;
     background-repeat: no-repeat;
     background-color: #F7F7F7;
@@ -172,7 +177,7 @@ body{
     text-transform: uppercase;
     font-size: 30px;
     color: #333333;
-    
+
 }
 
 .pagesubtitlecontainer{
@@ -196,10 +201,10 @@ body{
     padding-right: 5px;
 }
 
-.navbar-toggleable-md .navbar-collapse {         
+.navbar-toggleable-md .navbar-collapse {
        -webkit-justify-content: flex-end;
-       justify-content: flex-end;  
-} 
+       justify-content: flex-end;
+}
 .navbar{
     background-color:#282828;
 }
@@ -209,7 +214,7 @@ body{
 }
 
 .navbar-header{
-    align-content: flex-start;    
+    align-content: flex-start;
 }
 
 
@@ -220,49 +225,49 @@ body{
     padding-left: 12%;
     padding-right: 12%;
     text-align: justify;
-    min-height:150px; 
+    min-height:150px;
 }
 
 #item1{
     align-content: center;
-    min-height:15em; 
+    min-height:15em;
     background-size:cover;
     margin-top: 1em;
     padding-top: 1em;
     padding: 0em;
     padding-left: 1em;
     padding-right: 1em;
-    
+
 }
 
 
 
 #item2{
-    min-height:10em; 
+    min-height:10em;
     background-size:cover;
     margin-top: 1em;
     margin: 1em;
-    
+
 }
 
 #item4{
     align-content: center;
-    min-height:15em; 
+    min-height:15em;
     background-size:cover;
     margin-top: 2em;
     padding-top: 1em;
     padding: 2em;
-    
+
 }
 
 #item5{
     align-content: center;
-    min-height:15em; 
+    min-height:15em;
     background-size:cover;
     margin-top: 2em;
     padding-top: 1em;
     padding: 2em;
-    
+
 }
 
 .nav-item.active> a:hover, .dropdown> a:hover {
@@ -281,7 +286,7 @@ body{
 }
 
 .nav-item{
-    color:aliceblue; 
+    color:aliceblue;
     background-color: #282828;
 }
 
@@ -327,7 +332,7 @@ p{
 
 @media all and (max-width: 580px) {
     .homepage p:first-of-type:first-letter{
-    font-size: 20vw} 
+    font-size: 20vw}
 }
 
 
@@ -336,8 +341,8 @@ p{
     font-size: 30px;
     display: inline-block;
     margin: auto;
-    display: flex; 
-    justify-content: center; 
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
@@ -353,7 +358,7 @@ h4.card-title a{
 
 @media all and (max-width: 580px) {
     h4.card-title a{
-    font-size: 10vw !important;} 
+    font-size: 10vw !important;}
 }
 
 btn.stretched-link a{
@@ -370,7 +375,7 @@ btn.stretched-link a{
     font-stretch: extra-condensed;
     font-style: normal;
     flex-wrap: wrap;
-    
+
 }
 
 
@@ -387,7 +392,7 @@ a {
     color: #E9D4D8;
     background-color: #111010;
     border-radius: 0px;
-    
+
 }
 
 #cardRethorics{
@@ -396,7 +401,7 @@ a {
     color: #E9D4D8;
     background-color: #111010;
     border-radius: 0px;
-    
+
 }
 
 #cardCritics{
@@ -405,7 +410,7 @@ a {
     color: #E9D4D8;
     background-color: #111010;
     border-radius: 0px;
-    
+
 }
 
 #cardFreqWords{
@@ -414,7 +419,7 @@ a {
     color: #D8CAC2;
     background-color: #282828;
     border-radius: 0px;
-    
+
 }
 #cardSentAnalysis{
     padding: 1em;
@@ -422,7 +427,7 @@ a {
     color: #D8CAC2;
     background-color: #282828;
     border-radius: 0px;
-    
+
 }
 
 #cardEmotionDetection{
@@ -431,14 +436,14 @@ a {
     color: #D8CAC2;
     background-color: #282828;
     border-radius: 0px;
-    
+
 }#cardTopicModeling{
     padding: 1em;
     /*margin: 1em;*/
     color: #D8CAC2;
     background-color: #282828;
     border-radius: 0px;
-    
+
 }
 
 #cardOntology{
@@ -447,7 +452,7 @@ a {
     color: #E1DED4;
     background-color: #564f4f;
     border-radius: 0px;
-    
+
 }
 
 
@@ -456,7 +461,7 @@ a {
     /*margin: 1em;*/
     color: #000000;
     background-color: #D3CDCD;
-    border-radius: 0px;   
+    border-radius: 0px;
 }
 
 
@@ -533,7 +538,7 @@ footer h4{
 
 #footercol1{
     margin-top: 20px;
-    padding-top:20px;    
+    padding-top:20px;
 }
 
 .card-body{
@@ -545,8 +550,8 @@ footer h4{
     margin: auto;
     display: inline;
 }
- 
-    
+
+
 .menucontainer{
     margin-top: 2em;
     margin-bottom: 6em;
@@ -566,7 +571,7 @@ div .dropdown-menu{
 
 .btn-group>.btn{
     border-radius: 0;
-    border:1px solid #333333;   
+    border:1px solid #333333;
 }
 
 .btn-group>.dropdown-menu{
@@ -579,7 +584,7 @@ div .dropdown-menu{
 }
 #item6 div{
     margin-top: 3em;
-    margin-bottom: 3em;  
+    margin-bottom: 3em;
 }
 
 #item6 li{
