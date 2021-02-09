@@ -1,46 +1,7 @@
-/*fiorina = "."*/
-@font-face {
-    font-family: '.';
-    src: url('fonts_2025/font_1/22b8085d997b509b25f8ac40303b7b85.eot');
-    src: url('fonts_2025/font_1/228085d997b509b25f8ac40303b7b85.eot?#iefix') format('embedded-opentype'),
-        url('fonts_2025/font_fiorina/fiorinatext-light.woff2') format('woff2'),
-        url('fonts_2025/font_fiorina/fiorinatext-light.woff') format('woff'),
-        url('fonts_2025/font_1/228085d997b509b25f8ac40303b7b85.ttf') format('truetype'),
-        url('fonts_2025/font_1/228085d997b509b25f8ac40303b7b85.svg#.') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Rankings Caps';
-    src: url('fonts_2025/font_rankingCaps/RankingsCaps-Regular.eot');
-    src: url('fonts_2025/font_rankingCaps/RankingsCaps-Regular.eot?#iefix') format('embedded-opentype'),
-        url('fonts_2025/font_rankingCaps/RankingsCaps-Regular.woff2') format('woff2'),
-        url('fonts_2025/font_rankingCaps/RankingsCaps-Regular.woff') format('woff'),
-        url('fonts_2025/font_rankingCaps/RankingsCaps-Regular.ttf') format('truetype'),
-        url('fonts_2025/font_rankingCaps/RankingsCaps-Regular.svg#RankingsCaps-Regular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'North Avellion';
-    src: url('fonts_2025/NorthAvellion/NorthAvellion-Regular.eot');
-    src: url('fonts_2025/NorthAvellion/NorthAvellion-Regular.eot?#iefix') format('embedded-opentype'),
-        url('fonts_2025/NorthAvellion/North-Avellion.woff2') format('woff2'),
-        url('fonts_2025/NorthAvellion/North-Avellion.woff') format('woff'),
-        url('fonts_2025/NorthAvellion/NorthAvellion-Regular.ttf') format('truetype'),
-        url('fonts_2025/NorthAvellion/NorthAvellion-Regular.svg#NorthAvellion-Regular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
 
 @font-face {
   font-family: "La_Beauties";
-  src: url(./fonts/La_Beauties.ttf);
+  src: url(fonts/La\ Beauties.ttf);
 
 }
 
