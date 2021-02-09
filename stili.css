@@ -39,8 +39,9 @@
 }
 
 @font-face {
-  font-family: "La Beauties";
-  src: url(./fonts/La Beauties.ttf);
+  font-family: "La_Beauties";
+  src: url(./fonts/La_Beauties.ttf);
+
 }
 
 html{
@@ -127,7 +128,7 @@ body{
 
 
 #coversubtitle {
-    font-family: 'La Beauties';
+    font-family: 'La_Beauties';
     text-align: center;
     font-size: 5vw;
     align-content: flex-end;
