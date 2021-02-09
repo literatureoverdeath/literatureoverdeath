@@ -359,7 +359,11 @@ a.nav-link{
     color: #564f4f;
     background-color: #0c0d0c;}
 
-
+#lod{
+    font-family: BadlyStamped;
+    font-size: 300px;
+    font-weight:300;
+}
 
 /*non riesco a cambiare il clore del testo nella navbar*/
 
@@ -539,9 +543,18 @@ a {
 }
 
 .footercoltext{
-    font-size: 85%;
+    font-size: 90%;
     word-break: break-all;
 }
+.footercoltext a{
+    color: #749044;
+}
+
+.footercoltext a:hover{
+    color: #3c8c74;
+}
+
+
 
 
 div img {
