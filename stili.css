@@ -59,6 +59,11 @@ html{
     font-family: '.';
 }
 
+.row1, .row2, .row3 {
+    display: flex;
+    margin: 21px;
+}
+
 .menucontainer{
     margin-top: 2em;
     margin-bottom: 6em;
