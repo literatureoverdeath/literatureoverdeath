@@ -59,7 +59,10 @@ html{
     font-family: '.';
 }
 
-
+.row1, .row2, .row3 {
+    display: flex;
+    margin: 21px;
+}
 
 .menucontainer{
     margin-top: 2em;
@@ -378,7 +381,6 @@ btn.stretched-link a{
     font-stretch: extra-condensed;
     font-style: normal;
     flex-wrap: wrap;
-    padding-bottom: 5em;
 
 }
 
@@ -547,10 +549,6 @@ footer h4{
 
 .card-body{
     padding:0.25rem;
-}
-
-.card{
-    height: 90%;
 }
 
 .homepage figure.palettecolor,.homepage img.palettecolor{
