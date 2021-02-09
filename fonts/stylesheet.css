@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'Typewriter_Condensed';
+    src: url('Typewriter_Condensed-Bold.woff2') format('woff2'),
+        url('Typewriter_Condensed-Bold.woff') format('woff'),
+        url('Typewriter_Condensed-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Typewriter_Condensed';
+    src: url('Typewriter_Condensed.woff2') format('woff2'),
+        url('Typewriter_Condensed.woff') format('woff'),
+        url('Typewriter_Condensed.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Typewriter_Condensed_Demi';
+    src: url('Typewriter_Condensed_Demi.woff2') format('woff2'),
+        url('Typewriter_Condensed_Demi.woff') format('woff'),
+        url('Typewriter_Condensed_Demi.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto Mono';
+    src: url('RobotoMono-Regular.woff2') format('woff2'),
+        url('RobotoMono-Regular.woff') format('woff'),
+        url('RobotoMono-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BadlyStamped';
+    src: url('BadlyStamped.woff2') format('woff2'),
+        url('BadlyStamped.woff') format('woff'),
+        url('BadlyStamped.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Another Typewriter';
+    src: url('AnotherTypewriter.woff2') format('woff2'),
+        url('AnotherTypewriter.woff') format('woff'),
+        url('AnotherTypewriter.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

@@ -1,3 +1,75 @@
+/*COLOR PALETTE
+Verde oliva: #749044
+petrolio asparago: #405945
+Carta da zucchero scura lacustre: #3c8c74
+rosa antico biancastro schifetto : #d8c9a9
+Betulla bianchetta: #f1f2e6
+Heavy metal de base nero: #0c0d0c
+*/
+
+
+@font-face {
+    font-family: 'Typewriter_Condensed';
+    src: url('fonts/Typewriter_Condensed-Bold.woff2') format('woff2'),
+        url('fonts/Typewriter_Condensed-Bold.woff') format('woff'),
+        url('fonts/Typewriter_Condensed-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Typewriter_Condensed';
+    src: url('fonts/Typewriter_Condensed.woff2') format('woff2'),
+        url('fonts/Typewriter_Condensed.woff') format('woff'),
+        url('fonts/Typewriter_Condensed.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Typewriter_Condensed_Demi';
+    src: url('fonts/Typewriter_Condensed_Demi.woff2') format('woff2'),
+        url('fonts/Typewriter_Condensed_Demi.woff') format('woff'),
+        url('fonts/Typewriter_Condensed_Demi.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto Mono';
+    src: url('fonts/RobotoMono-Regular.woff2') format('woff2'),
+        url('fonts/RobotoMono-Regular.woff') format('woff'),
+        url('fonts/RobotoMono-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BadlyStamped';
+    src: url('fonts/BadlyStamped.woff2') format('woff2'),
+        url('fonts/BadlyStamped.woff') format('woff'),
+        url('fonts/BadlyStamped.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Another Typewriter';
+    src: url('fonts/AnotherTypewriter.woff2') format('woff2'),
+        url('fonts/AnotherTypewriter.woff') format('woff'),
+        url('fonts/AnotherTypewriter.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
 
 @font-face {
   font-family: "La_Beauties";
@@ -5,22 +77,25 @@
 
 }
 
+.covertitle::first-letter{
+    font-family: "BadlyStamped"!important;  
+}
+
 html{
     overflow-x: hidden;
 }
 
 ::selection{
-    background-color: #333333;
-    color: white;
+    background-color: #405945;
+    color: #d8c9a9;
 }
 
 .home{
-    background-color: #f7f7f7;
     color: #333333;
-    font-family: '.';
+    background-color: #f1f2e6;
 }
 
-.row1, .row2, .row3 {
+.row{
     display: flex;
     margin: 21px;
 }
@@ -34,6 +109,7 @@ html{
 
 body{
     padding-top: 20px;
+    font-family: "Typewriter_Condensed" !important;
     overflow-x: hidden;
     width:100%;
     overflow-y: hidden;
@@ -42,7 +118,7 @@ body{
 
 
 .home h1{
-    font-family: "Rankings Caps";
+    font-family: "Another Typewriter";
 }
 
 .homepage {
@@ -72,12 +148,20 @@ body{
   display:block;
 }}
 
-#covertitle{
+.covertitle{
     text-align:center;
-    font-size: 10vw !important;
-    font-family: "Rankings Caps";
+    font-size: 8vw;
+    font-family: "Another Typewriter";
     align-content: flex-end;
+    color: #d8c9a9;
+    padding: 20px;
 }
+
+.first-letter {
+    font-family: "BadlyStamped";
+  }
+
+
 
 #covertextbox{
     align-content: center;
@@ -85,11 +169,6 @@ body{
     margin: .5em;
     margin-left: 0em;
     padding-top: 55px;
-    margin-top:5em;
-}
-#covertitle{
-    font-size: 10vw;
-
 }
 
 
@@ -98,15 +177,34 @@ body{
     text-align: center;
     font-size: 5vw;
     align-content: flex-end;
-    color: dimgray;
+    color: #f1f2e6 ;
 }
 
 
-#item{
+#item {
     min-height:450px;
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-color: #F7F7F7;
+    background: linear-gradient(201deg, #749044, #405945, #3c8c74, #0c0d0c);
+    background-size: 800% 800%;
+
+    -webkit-animation: AnimationName 55s ease infinite;
+    -moz-animation: AnimationName 55s ease infinite;
+    animation: AnimationName 55s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:77% 0%}
+    50%{background-position:24% 100%}
+    100%{background-position:77% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:77% 0%}
+    50%{background-position:24% 100%}
+    100%{background-position:77% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:77% 0%}
+    50%{background-position:24% 100%}
+    100%{background-position:77% 0%}
 }
 
 
@@ -118,10 +216,7 @@ body{
 
 .pagetitle{
     text-align:center;
-    font-family: "Ranking Caps";
-    border-bottom: solid 3px;
-    border-image: linear-gradient(to bottom right, #EEEEEE 0%, #DDDDDD 25%, #CCCCCC 50%, #BBBBBB 75%, #333333 100%);
-    border-image-slice: 1;
+    font-family: "Another Typewriter" !important;
 }
 
 .home h2{
@@ -139,7 +234,7 @@ body{
 }
 
 .home h3{
-    font-family: "Ranking Caps";
+    font-family: "Another Typewriter";
     text-align: center;
     text-transform: uppercase;
     font-size: 30px;
@@ -156,7 +251,7 @@ body{
 
 .btn-secondary{
     background-color: #d3cdcd !important;
-    border-color: #282828 !important;
+    border-color: #0c0d0c !important;
     font-size: 13px !important;
 }
 #butrow{
@@ -173,11 +268,11 @@ body{
        justify-content: flex-end;
 }
 .navbar{
-    background-color:#282828;
+    background-color:#0c0d0c !important;
 }
 
 .navbar a{
-    color: #F7F7F7 !important;
+    color:  #d8c9a9 !important;
 }
 
 .navbar-header{
@@ -186,7 +281,7 @@ body{
 
 
 #divfacciata{
-    background-color: #564f4f;
+    background-color: #0c0d0c;
     color: honeydew;
     font-size: 110%;
     padding-left: 12%;
@@ -248,13 +343,13 @@ body{
 }
 
 .navbar-custom{
-    background-color: #282828;
+    background-color: #0c0d0c;
     color: antiquewhite;
 }
 
 .nav-item{
     color:aliceblue;
-    background-color: #282828;
+    background-color: #0c0d0c;
 }
 
 .navbar-nav > li > .dropdown-menu {
@@ -268,7 +363,7 @@ body{
 .navbar-brand{
     object-position: center;
     color: white;
-    background-color: #282828;
+    background-color: #0c0d0c;
     border-radius: 0%;
     margin:0px;
     padding: 3px;
@@ -290,7 +385,7 @@ p{
     margin-right:5px;
     color: #EEEEEE;
     text-shadow: 2px 2px 5px #404040;
-    font-family: 'Ranking Caps';
+    font-family: "Another Typewriter";
     margin-top:-8px;
     margin-bottom: -10px;
     background-clip:content-box;
@@ -304,7 +399,7 @@ p{
 
 
 .card-title {
-    font-family: "North Avellion";
+    font-family: "Another Typewriter" !important;
     font-size: 30px;
     display: inline-block;
     margin: auto;
@@ -313,12 +408,8 @@ p{
     align-items: center;
 }
 
-
-
-
-
 h4.card-title a{
-    font-family: "North Avellion";
+    font-family: "Another Typewriter" !important;
     font-size: 30px;
     color: white;
 }
@@ -385,7 +476,7 @@ a {
     padding: 1em;
     /*margin: 1em;*/
     color: #D8CAC2;
-    background-color: #282828;
+    background-color: #0c0d0c;
     border-radius: 0px;
 
 }
@@ -393,7 +484,7 @@ a {
     padding: 1em;
     /*margin: 1em;*/
     color: #D8CAC2;
-    background-color: #282828;
+    background-color: #0c0d0c;
     border-radius: 0px;
 
 }
@@ -402,14 +493,14 @@ a {
     padding: 1em;
     /*margin: 1em;*/
     color: #D8CAC2;
-    background-color: #282828;
+    background-color: #0c0d0c;
     border-radius: 0px;
 
 }#cardTopicModeling{
     padding: 1em;
     /*margin: 1em;*/
     color: #D8CAC2;
-    background-color: #282828;
+    background-color: #0c0d0c;
     border-radius: 0px;
 
 }
@@ -434,7 +525,7 @@ a {
 
 
 #footerdiv{
-    background-color: #282828;
+    background-color: #0c0d0c;
     margin: 0px;
     padding: 0px;
 }
