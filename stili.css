@@ -337,18 +337,17 @@ a.nav-link{
     font-size:22px;
 }
 .nav-item.active> a:hover, .dropdown> a:hover {
-    color:wheat; /*ma perché sta roba non funziona?*/
-    background-color: #111010;
-    color: #EEEEEE;
+    color:#d8c9a9;
+    background-color: #405945;
 }
 
 .dropdown-menu> a:hover{
-    background-color: #111010;
+    background-color: #405945;
 }
 
 .navbar-custom{
     background-color: #0c0d0c;
-    color: antiquewhite;
+    color: #d8c9a9;
 }
 
 .nav-item{
@@ -358,7 +357,7 @@ a.nav-link{
 
 .navbar-nav > li > .dropdown-menu {
     color: #564f4f;
-    background-color: #D3CDCD;}
+    background-color: #0c0d0c;}
 
 
 
