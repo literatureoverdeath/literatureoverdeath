@@ -196,27 +196,27 @@
                     <p>and flowers among the rocks - </p>
                     <p>You don't know the speech</p>
                     <p>and striving of the sea you carry,</p>
-                    <p><span id = "similitude">as rich as memory</span></p>
-                    <p><span id = "similitude">like the bare countryside,</span></p>
+                    <p><span class = "similitude">as rich as memory</span></p>
+                    <p><span class = "similitude">like the bare countryside,</span></p>
                     <p>you, like a hard and</p>
                     <p>deep-sweet word,</p>
                     <p>old in the blood</p>
                     <p>that gathers in the eyes:</p>
-                    <p><span id ="similitude">fresh, like fruit</span></p>
+                    <p><span class ="similitude">fresh, like fruit</span></p>
                     <p>that is memory and season -</p>
                     <p>you hold your breath</p>
                     <p>beneath the August sky,</p>
-                    <p><span id = "metaphor">the olives of your glance</span></p>
+                    <p><span class = "metaphor">the olives of your glance</span></p>
                     <p>can calm the sea,</p>
                     <p>and you live and live again</p>
                     <p>without surprise, as firm</p>
                     <p>as the earth, as dark</p>
-                    <p>as the earth,<span id = "metaphor">olive-press</span></p>
+                    <p>as the earth,<span class = "metaphor">olive-press</span></p>
                     <p>of seasons and dreams</p>
                     <p>exposed to the moon,</p>
                     <p>old indeed like</p>
-                    <p><span id = "similitude">your mother's hands</span>,</p>
-                    <p><span id = "metaphor">the bowl of the brazier</span>.</p>
+                    <p><span class = "similitude">your mother's hands</span>,</p>
+                    <p><span class = "metaphor">the bowl of the brazier</span>.</p>
         
                     <p>1945, October, 27</p>
         
@@ -339,9 +339,13 @@
                     </section>
                 </article>
             
+            </div>
+            <div class="col-md-3">
+                <button id= "similitude" onclick="func('similitude')">Similitude</button>
+                <button id= "metaphor" onclick="func('metaphor')">Metaphor</button>
+            </div>
         </div>
-        </div>
-        <div class="col-md-3"></div>
+       
     </div>
 </div>
 
@@ -380,16 +384,44 @@
 </footer>
 
 <script>
-    function func1(id){
-                if (document.getElementById("container_testo").hasChildNodes()) {
-                    var children = document.getElementById("container_testo").childNodes;
 
-                    for (var i = 0; i < children.length; i++) {
-                        children[i].style = "display: none";
-                    }
-                }
-                document.getElementById(id).style = "display: block";
+    var colors = {
+        similitude: "red",
+        metaphor: "blue",
+    }
+
+    function func1(id){
+        if (document.getElementById("container_testo").hasChildNodes()) {
+            var children = document.getElementById("container_testo").childNodes;
+
+            for (var i = 0; i < children.length; i++) {
+                children[i].style = "display: none";
             }
+        }
+        document.getElementById(id).style = "display: block";
+    }
+
+    function func(myclass){
+        var color_to_set = undefined;
+        if (document.getElementById(myclass).style.background == 'rgb(216, 201, 169)'){
+            document.getElementById(myclass).style.background = 'white';
+            color_to_set = "inherit";
+        }
+        else{
+            document.getElementById(myclass).style.background = 'rgb(216, 201, 169)';
+            color_to_set = colors[myclass];
+        }
+        var x = document.getElementsByClassName(myclass);
+        for (var i in x){
+            if (x[i] instanceof HTMLElement){
+                x[i].style.background = color_to_set; 
+            }
+
+        }
+        document.getElementById("container_testo").scroll(0, x[0].offsetTop);
+        
+        
+    }
 </script>
 
 </body>
