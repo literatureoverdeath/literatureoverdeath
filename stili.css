@@ -78,7 +78,7 @@ Heavy metal de base nero: #0c0d0c
 }
 
 .covertitle::first-letter{
-    font-family: "BadlyStamped"!important;  
+    font-family: "BadlyStamped"!important;
 }
 
 html{
@@ -283,12 +283,16 @@ body{
 
 #divfacciata{
     background-color: #0c0d0c;
-    color: honeydew;
+    color: #d8c9a9;
     font-size: 20px;
     padding-left: 12%;
     padding-right: 12%;
     text-align: justify;
     min-height:150px;
+}
+
+.italics {
+  font-style: italic;
 }
 
 #item1{
