@@ -349,13 +349,85 @@ div .dropdown-menu{
 
 /*------------------------------------------------------------*/
 
+html {
+    scroll-behavior: smooth;
+}
+
+#container_testo{
+        width: 50vw;
+        height: 80vh;
+        color: white;
+        background-color:#0c0d0c;
+        overflow-y: scroll;
+        text-align: center;
+        scroll-behavior: smooth;
+}
+
+body.home{
+    background-color: #405945;
+}
 
 .first-letter {
     font-family: "BadlyStamped";
   }
 
   .title_rethorical_analysis{
+      color: #0c0d0c;
       text-align: center;
       font-size: 40px;
       font-family: 'Another Typewriter';
+      margin-bottom: 5%;
   }
+
+  .container_all{
+    margin-top: 8%;
+    background-color: #405945;
+}
+
+.btn:not(:disabled):not(.disabled) {
+    font-family: 'Typewriter_Condensed';
+    color: #0c0d0c;
+}
+
+.container a{
+    font-family: 'Typewriter_Condensed';
+    color: #0c0d0c;
+
+}
+
+.container a:hover{
+    color: #0c0d0c;
+}
+
+.card-header:first-child{
+    background-color:#f1f2e6 ;
+}
+
+article{
+    color: #d8c9a9;
+}
+
+article h3{
+    padding: 5%;
+}
+
+article p{
+    line-height: 0;
+}
+
+::-webkit-scrollbar {
+    width: 13px;
+    height: 13px;
+   }
+   ::-webkit-scrollbar-thumb {
+    background: linear-gradient(13deg, #405945 14%,#3c8c74 40%);
+    border-radius: 10px;
+   }
+   ::-webkit-scrollbar-thumb:hover{
+    background: linear-gradient(13deg, #d8c9a9 14%,#749044 64%);
+   }
+   ::-webkit-scrollbar-track{
+    background: #f1f2e6;
+    border-radius: 10px;
+    box-shadow: inset 7px 10px 12px #f0f0f0;
+   }
