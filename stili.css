@@ -283,7 +283,7 @@ body{
 
 #divfacciata{
     background-color: #0c0d0c;
-    color: #d8c9a9;
+    color: #d8c9a9!important;
     font-size: 20px;
     padding-left: 12%;
     padding-right: 12%;
