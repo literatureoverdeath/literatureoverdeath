@@ -1,0 +1,361 @@
+/*COLOR PALETTE
+Verde oliva: #749044
+petrolio asparago: #405945
+Carta da zucchero scura lacustre: #3c8c74
+rosa antico biancastro schifetto : #d8c9a9
+Betulla bianchetta: #f1f2e6
+Heavy metal de base nero: #0c0d0c
+*/
+
+
+@font-face {
+    font-family: 'Typewriter_Condensed';
+    src: url('fonts/Typewriter_Condensed-Bold.woff2') format('woff2'),
+        url('fonts/Typewriter_Condensed-Bold.woff') format('woff'),
+        url('fonts/Typewriter_Condensed-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Typewriter_Condensed';
+    src: url('fonts/Typewriter_Condensed.woff2') format('woff2'),
+        url('fonts/Typewriter_Condensed.woff') format('woff'),
+        url('fonts/Typewriter_Condensed.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Typewriter_Condensed_Demi';
+    src: url('fonts/Typewriter_Condensed_Demi.woff2') format('woff2'),
+        url('fonts/Typewriter_Condensed_Demi.woff') format('woff'),
+        url('fonts/Typewriter_Condensed_Demi.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto Mono';
+    src: url('fonts/RobotoMono-Regular.woff2') format('woff2'),
+        url('fonts/RobotoMono-Regular.woff') format('woff'),
+        url('fonts/RobotoMono-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BadlyStamped';
+    src: url('fonts/BadlyStamped.woff2') format('woff2'),
+        url('fonts/BadlyStamped.woff') format('woff'),
+        url('fonts/BadlyStamped.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Another Typewriter';
+    src: url('fonts/AnotherTypewriter.woff2') format('woff2'),
+        url('fonts/AnotherTypewriter.woff') format('woff'),
+        url('fonts/AnotherTypewriter.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+
+@font-face {
+  font-family: "La_Beauties";
+  src: url(fonts/La\ Beauties.ttf);
+
+}
+
+
+
+html{
+    overflow-x: hidden;
+}
+
+::selection{
+    background-color: #405945;
+    color: #d8c9a9;
+}
+
+
+
+.row{
+    display: flex;
+    margin: 21px;
+}
+
+
+
+body{
+    padding-top: 20px;
+    font-family: "Typewriter_Condensed" !important;
+    font-size: 20px;
+    overflow-x: hidden;
+    width:100%;
+    overflow-y: hidden;
+}
+
+
+
+.home h1{
+    font-family: "Another Typewriter";
+}
+
+
+
+@media all and (max-width: 650px) {
+.container {
+  display:block;
+}}
+
+
+
+#item {
+    min-height:450px;
+    background: linear-gradient(201deg, #749044, #405945, #3c8c74, #0c0d0c);
+    background-size: 800% 800%;
+
+    -webkit-animation: AnimationName 55s ease infinite;
+    -moz-animation: AnimationName 55s ease infinite;
+    animation: AnimationName 55s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:77% 0%}
+    50%{background-position:24% 100%}
+    100%{background-position:77% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:77% 0%}
+    50%{background-position:24% 100%}
+    100%{background-position:77% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:77% 0%}
+    50%{background-position:24% 100%}
+    100%{background-position:77% 0%}
+}
+
+
+
+.pagetitlecontainer{
+    margin-top: 4em;
+    padding-top: 1em;
+}
+
+.pagetitle{
+    text-align:center;
+    font-family: "Another Typewriter" !important;
+}
+
+.btn-secondary{
+    background-color: #d3cdcd !important;
+    border-color: #0c0d0c !important;
+    font-size: 13px !important;
+}
+#butrow{
+    margin-top: 35px;
+    max-height: 25px;
+    display:inline-table;
+    line-height: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.navbar-toggleable-md .navbar-collapse {
+       -webkit-justify-content: flex-end;
+       justify-content: flex-end;
+}
+.navbar{
+    background-color:#0c0d0c !important;
+}
+
+.navbar a{
+    color:  #d8c9a9 !important;
+}
+
+.navbar-header{
+    align-content: flex-start;
+}
+
+
+
+.italics {
+  font-style: italic;
+}
+
+
+a.nav-link{
+    font-size:22px;
+}
+.nav-item.active> a:hover, .dropdown> a:hover {
+    color:#d8c9a9;
+    background-color: #405945;
+}
+
+.dropdown-menu> a:hover{
+    background-color: #405945;
+}
+
+.navbar-custom{
+    background-color: #0c0d0c;
+    color: #d8c9a9;
+}
+
+.nav-item{
+    color:aliceblue;
+    background-color: #0c0d0c;
+}
+
+.navbar-nav > li > .dropdown-menu {
+    color: #564f4f;
+    background-color: #0c0d0c;}
+
+
+.navbar-brand{
+    object-position: center;
+    color: white;
+    background-color: #0c0d0c;
+    border-radius: 0%;
+    margin:0px;
+    padding: 3px;
+}
+
+.dropdown-menu{
+    color: black;
+}
+
+
+p{
+    margin-top: 1em;
+    padding: 1em;
+}
+
+
+
+btn.stretched-link a{
+    font-size: 30px;
+}
+
+
+a {
+    color: honeydew;
+    white-space: normal !important;
+}
+
+
+
+#footerdiv{
+    background-color: #0c0d0c;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+#footercol1{
+    align-content: center;
+}
+
+#footercol2{
+    align-content: center;
+    padding:1em;
+    margin: 1em;
+}
+
+#footercol3{
+    align-content: center;
+    padding:1em;
+    margin: 1em;
+}
+
+.footercoltext{
+    font-size: 90%;
+    word-break: break-all;
+}
+.footercoltext a{
+    color: #749044;
+}
+
+.footercoltext a:hover{
+    color: #3c8c74;
+}
+
+
+
+#logo{
+    max-height:100px;
+    max-width: 130px;
+}
+
+footer{
+    max-height: 200px;
+}
+
+footer p{
+    color:#EDEDED;
+}
+
+footer h4{
+    color: #9b9b9b !important;
+}
+
+.crnotice{
+    text-align:center;
+    font-family: 'Another Typewriter';
+    color: honeydew;
+    font-size: 85%;
+}
+
+.footersectionheader{
+    color: honeydew;
+    text-align:center;
+
+}
+
+#footercol1{
+    margin-top: 20px;
+    padding-top:20px;
+}
+
+div .dropdown-menu{
+    background-color: #CCCCCC;}
+
+.menubtn{
+    background-color: #333333;
+    color:#EEEEEE;
+    margin:2px;
+}
+
+.btn-group>.btn{
+    border-radius: 0;
+    border:1px solid #333333;
+}
+
+.btn-group>.dropdown-menu{
+    border-radius: 0;
+}
+
+/*------------------------------------------------------------*/
+
+
+.first-letter {
+    font-family: "BadlyStamped";
+  }
+
+  .title_rethorical_analysis{
+      text-align: center;
+      font-size: 40px;
+      font-family: 'Another Typewriter';
+  }
