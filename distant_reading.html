@@ -46,10 +46,10 @@
           Distant Reading
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Most Frequent Words</a>
+          <a class="dropdown-item" href="distant_reading.html#MFW">Most Frequent Words</a>
           <a class="dropdown-item" href="#">Sentiment Analysis</a>
           <a class="dropdown-item" href="#">Emotion Detection</a>
-          <a class="dropdown-item" href="distant_reading.html">Topic Modeling</a>
+          <a class="dropdown-item" href="distant_reading.html#topic_modeling">Topic Modeling</a>
         </div>
       </li>
 
@@ -66,10 +66,34 @@
   </div>
 </div>
 </nav>
-
+<div id="MFW"></div>
 <div class="container_all">
-  <h2 class="title_MFW"><span class="first-letter">T</span>opic <span class="first-letter">M</span>odeling</h2>
-  <p class="description_MFW">We will exploit this statistical model to extract the hidden semantic structure of every text, subcorpora and global corpus.</p>
+  <h2 class="title_MFW"><span class="first-letter">M</span>ost <span class="first-letter">F</span>requent  <span class="first-letter">W</span>ords</h2>
+  <p class="description_MFW">Through distant reading tools we aim at finding out the most frequent words and expressions (2 words, 3 words) in each of the 3 included subcorpora, a subcorpus being a sample of representative diary pages (prose) and poems of each author. Moreover we would like to perform the same type of analysis on the overall corpus so to highlight points of affinity and divergency.</p>
+  <div class="row">
+      
+      <div class="col-md-6 elenco_parole" >
+       <ul>
+         <li>('earth', 29)</li>
+         <li>('death', 16)</li>
+         <li>('blood', 16)</li>
+         <li>('eyes', 16)</li>
+         <li>('silence', 16)</li>
+         <li>('dawn', 15)</li>
+         <li>('know', 14)</li>
+         <li>('sky', 13)</li>
+         <li>('morning', 13)</li>
+         <li>('light', 13)</li>
+        </ul>
+      </div>
+      <div class="col-md-6 img_pavese"><img src="images/img_pavese_words.png"></div>
+  </div>
+</div>
+
+<div id="topic_modeling"></div>
+<div class="container_all">
+  <h2 class="title_topic_modeling"><span class="first-letter">T</span>opic <span class="first-letter">M</span>odeling</h2>
+  <p class="description_topic_modeling">We will exploit this statistical model to extract the hidden semantic structure of every text, subcorpora and global corpus.</p>
   <div class="row">
       <div class="col-md-3"></div>
       <div class="col-md-6">
@@ -78,6 +102,8 @@
       <div class="col-md-3"></div>
   </div>
 </div>
+
+
 
 <footer class="row text-center pagefoot">
     <div class="container-fluid row" id="footerdiv">
