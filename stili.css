@@ -616,6 +616,7 @@ footer h4{
     height: 90%;
     border: 9px double #f1f2e6 !important;
     transition: transform .3s;
+    
 }
 
 .card:hover{

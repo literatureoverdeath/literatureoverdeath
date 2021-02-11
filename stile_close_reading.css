@@ -387,6 +387,7 @@ body.home{
 .btn:not(:disabled):not(.disabled) {
     font-family: 'Typewriter_Condensed';
     color: #0c0d0c;
+    font-size: 20px;
 }
 
 .container a{
@@ -434,15 +435,32 @@ article p{
 
 
    button#similitude{
-       border: transparent;
+    border: transparent;
     border-radius: 10%;
-    color:red;
-    background-color: rgb(216, 201, 169);
+    color:#749044;
+    width: 8rem;
+    height: 3rem;
+    font-size: 23px;
+    font-weight: bolder;
+    transition: transform .3s;
+    
+    
+    }
+
+    button#similitude:hover, button#metaphor:hover{
+        transform: scale(0.9);
+     
+
     }
 
     button#metaphor{
-        border: transparent;
-        border-radius: 10%;  
-    color:blue;
-    background-color: rgb(216, 201, 169);
+    border: transparent;
+    border-radius: 10%;  
+    color:#3c8c74;
+    width: 8rem;
+    height: 3rem;
+    font-size: 23px;
+    font-weight: bolder;
+    transition: transform .3s;
+    
     }

@@ -127,18 +127,18 @@
                         <div class="card-body" id="child2">
                             <div class="card">
                                 <div class="card-header">
-                                    <a href="#" data-toggle="collapse" data-target="#collapseTwoA">Child A</a>
+                                    <a href="#" data-toggle="collapse" data-target="#collapseTwoA">Ariel</a>
                                 </div>
                                 <div class="card-body collapse" data-parent="#child2" id="collapseTwoA">
-                                    Crunch wolf moon tempor, sunt aliqua put a bird.
+                                    -
                                 </div>
                             </div>
                             <div class="card">
                                 <div class="card-header">
-                                    <a href="#" data-toggle="collapse" data-target="#collapseTwoB">Child B</a>
+                                    <a href="#" data-toggle="collapse" data-target="#collapseTwoB">The Unabridged Journals</a>
                                 </div>
                                 <div class="card-body collapse" data-parent="#child1" id="collapseTwoB">
-                                    Another flipp runch wolf moon tempor, sunt aliqua put a bird.
+                                    -
                                 </div>
                             </div>
                         </div>
@@ -159,18 +159,18 @@
                     <div class="card-body" id="child3">
                         <div class="card">
                             <div class="card-header">
-                                <a href="#" data-toggle="collapse" data-target="#collapseThreeA">Child A</a>
+                                <a href="#" data-toggle="collapse" data-target="#collapseThreeA">Selected poems</a>
                             </div>
                             <div class="card-body collapse" data-parent="#child3" id="collapseThreeA">
-                                Crunch wolf moon tempor, sunt aliqua put a bird.
+                                -
                             </div>
                         </div>
                         <div class="card">
                             <div class="card-header">
-                                <a href="#" data-toggle="collapse" data-target="#collapseThreeB">Child B</a>
+                                <a href="#" data-toggle="collapse" data-target="#collapseThreeB">Letters</a>
                             </div>
                             <div class="card-body collapse" data-parent="#child3" id="collapseThreeB">
-                                Another flipp runch wolf moon tempor, sunt aliqua put a bird.
+                                -
                             </div>
                         </div>
                     </div>
@@ -341,8 +341,8 @@
             
             </div>
             <div class="col-md-3">
-                <button id= "similitude" style="background-color: white;"  onclick="func('similitude')">Similitude</button>
-                <button id= "metaphor" style="background-color: white;" onclick="func('metaphor')">Metaphor</button>
+                <button id= "similitude" style="background-color: rgb(241, 242,	230);"  onclick="func('similitude')">Similitude</button>
+                <button id= "metaphor" style="background-color:  rgb(241, 242,	230);" onclick="func('metaphor')">Metaphor</button>
             </div>
         </div>
        
@@ -386,8 +386,8 @@
 <script>
 
     var colors = {
-        similitude: "red",
-        metaphor: "blue",
+        similitude: "#7490447a",
+        metaphor: "#3c8c7485",
     }
 
     function func1(id){
@@ -404,7 +404,7 @@
     function func(myclass){
         var color_to_set = undefined;
         if (document.getElementById(myclass).style.background == 'rgb(216, 201, 169)'){
-            document.getElementById(myclass).style.background = 'white';
+            document.getElementById(myclass).style.background = 'rgb(241, 242,	230)';
             color_to_set = "inherit";
         }
         else{
