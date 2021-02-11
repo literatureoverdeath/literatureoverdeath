@@ -705,3 +705,21 @@ div .dropdown-menu{
     max-width: inherit;
     flex-wrap: wrap;
 }
+
+
+::-webkit-scrollbar {
+    width: 13px;
+    height: 13px;
+   }
+   ::-webkit-scrollbar-thumb {
+    background: linear-gradient(13deg, #405945 14%,#3c8c74 40%);
+    border-radius: 10px;
+   }
+   ::-webkit-scrollbar-thumb:hover{
+    background: linear-gradient(13deg, #d8c9a9 14%,#749044 64%);
+   }
+   ::-webkit-scrollbar-track{
+    background: #f1f2e6;
+    border-radius: 10px;
+    box-shadow: inset 7px 10px 12px #f0f0f0;
+   }
