@@ -431,3 +431,18 @@ article p{
     border-radius: 10px;
     box-shadow: inset 7px 10px 12px #f0f0f0;
    }
+
+
+   button#similitude{
+       border: transparent;
+    border-radius: 10%;
+    color:red;
+    background-color: rgb(216, 201, 169);
+    }
+
+    button#metaphor{
+        border: transparent;
+        border-radius: 10%;  
+    color:blue;
+    background-color: rgb(216, 201, 169);
+    }
