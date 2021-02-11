@@ -350,34 +350,91 @@ div .dropdown-menu{
 /*------------------------------------------------------------*/
 
 body.home{
-    background-color: #749044;
+    background-color: #f1f2e6;
 }
 
 .first-letter {
     font-family: "BadlyStamped";
   }
 
-  .title_MFW{
+  .title_about{
       color: #0c0d0c;
       text-align: center;
       font-size: 60px;
       font-family: 'Another Typewriter';
+      margin-bottom: 5%;
       
   }
 
-  .description_MFW{
-    font-family: 'Typewriter_Condensed';
-    color: #0c0d0c;
-    font-size: 25px;
-    width: 60%;
-    margin: auto;
-    text-align: center;
-    font-weight: bolder;
-    margin-bottom: 5%;
 
-  }
 
   .container_all{
     margin-top: 8%;
-    background-color: #749044;
+    background-color: #f1f2e6;
 }
+
+.card-title {
+    font-family: "Another Typewriter" !important;
+    color:#d8c9a9;
+    font-size: 30px;
+    display: inline-block;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h4.card-title a{
+    font-family: "Another Typewriter" !important;
+    font-size: 30px;
+    color: #d8c9a9;
+}
+
+@media all and (max-width: 580px) {
+    h4.card-title a{
+    font-size: 10vw !important;}
+}
+
+.card-text{
+    padding: 1em;
+    padding-bottom: 8em;
+    max-height:inherit;
+    text-align:justify;
+    font-size: 20px;
+    max-width: inherit;
+    font-stretch: extra-condensed;
+    font-style: normal;
+    flex-wrap: wrap;
+    color:#f1f2e6;
+
+}
+
+.card-body{
+    padding:0.25rem;
+}
+
+.card{
+    height: 90%;
+    width: 90%;
+    margin-left: 2rem;
+    border: 9px double #f1f2e6 !important;
+    transition: transform .3s;
+    padding: 1em;
+    background-color: #749044;
+    border-radius: 0px;
+    
+}
+
+.card:hover{
+  box-shadow: 16px 10px 16px 0 rgba(0,0,0,0.2);
+  transform: scale(0.9);
+}
+
+.card img{
+    border-radius: 5%;
+    border: 8px double white;
+}
+
+
+
+

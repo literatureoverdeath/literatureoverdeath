@@ -350,14 +350,14 @@ div .dropdown-menu{
 /*------------------------------------------------------------*/
 
 body.home{
-    background-color: #749044;
+    background-color: #3c8c74;
 }
 
 .first-letter {
     font-family: "BadlyStamped";
   }
 
-  .title_MFW{
+  .title_ontology{
       color: #0c0d0c;
       text-align: center;
       font-size: 60px;
@@ -365,7 +365,7 @@ body.home{
       
   }
 
-  .description_MFW{
+  .description_ontology{
     font-family: 'Typewriter_Condensed';
     color: #0c0d0c;
     font-size: 25px;
@@ -373,11 +373,11 @@ body.home{
     margin: auto;
     text-align: center;
     font-weight: bolder;
-    margin-bottom: 5%;
+    margin-bottom: 10%;
 
   }
 
   .container_all{
     margin-top: 8%;
-    background-color: #749044;
+    background-color: #3c8c74;
 }
