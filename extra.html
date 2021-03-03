@@ -2,6 +2,11 @@
 <html lang="en">
 <head>
 
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/default.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -71,10 +76,84 @@
   <h2 class="title_extra"><span class="first-letter">I</span>nteractive <span class="first-letter">E</span>xtra <span class="first-letter">T</span>ool</h2>
   <p class="description_extra">We would like to add a final possibility for the user to interact with ours subcorpora and deeply perceive the degree of semantic affinity between them. After a structural division of the texts and a grammatical and semantical tagging, the purpose is to allow an automatic recombination of literary extracts so to create a new coherent poem.</p>
   <div class="row">
-      <div class="col-md-3"></div>
-      <div class="col-md-6"></div>
-      <div class="col-md-3"></div>
-  </div>
+    <div class="col-md-3"></div>
+    <div class="col-md-6" style="background-color: black; width: 500px;">
+      <pre><code class="python">
+        
+          import numpy as np
+          import matplotlib.pyplot as plt
+          import csv
+          from nltk.tokenize import word_tokenize
+          import pandas as pd
+          from nltk.stem import SnowballStemmer
+          from nltk.corpus import stopwords
+          import re
+
+          stemmer = SnowballStemmer('italian')
+          stop_words = set(stopwords.words('italian'))
+          df1 = pd.read_csv("csv1948.csv", sep=";")
+
+          parole = list()
+
+          for x in df1["raw_text"]:
+              for j in word_tokenize(str(x)):
+                  parole.append(j)
+
+          parole2 = list()
+
+          for e in parole:
+              lowered = e.lower()
+              parole2.append(lowered)
+
+          filtered = []
+          for h in parole2:
+              if h not in stop_words:
+                  h = re.sub("[^\w]+", "", h)
+                  if h != "" and h:
+                      filtered.append(h)
+                      for i in filtered:
+                          i = re.sub("[^\d]+", "", i)
+                          if i != "":
+                              filtered.remove(i)
+                              for i in filtered:
+                                  if len(i) <=3:
+                                      filtered.remove(i)
+          print(filtered)
+
+          stemmed = list()
+          for v in filtered:
+              stemmato = stemmer.stem(v)
+              stemmed.append(stemmato)
+
+          from nltk.probability import FreqDist
+
+          fdist = FreqDist(filtered) #ma possiamo anche usare stemmed
+          mostcomm = fdist.most_common(15)
+          print(mostcomm)
+
+          word = list(zip(*mostcomm))[0]
+          freq = list(zip(*mostcomm))[1]
+          x_pos = np.arange(len(word))
+
+          print(x_pos)
+
+          plt.rcParams.update({'font.size': 12})
+          # Sull'asse X avremo una barra con il valore della frequenza per ogni parola
+          plt.bar(x_pos, freq,align='center')
+          # L'asse X indicherà ad ogni barra la parola corrispondente in verticale (per risparmiare spazio)
+          plt.xticks(x_pos, word, rotation='vertical')
+
+          plt.ylabel('Frequency')
+          plt.title('Word Frequency from 80 posts')
+          plt.show()
+
+
+
+      </code></pre>
+      
+    </div>
+    <div class="col-md-3"></div>
+</div>
 </div>
 
 <footer class="row text-center pagefoot">

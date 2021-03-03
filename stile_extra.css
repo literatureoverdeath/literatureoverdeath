@@ -398,3 +398,25 @@ body.home{
     border-radius: 10px;
     box-shadow: inset 7px 10px 12px #f0f0f0;
    }
+
+   .hljs {
+       color: #f1f2e6;
+       background-color: black;
+   }
+
+   .hljs-deletion, .hljs-quote, .hljs-selector-class, .hljs-selector-id, .hljs-string, .hljs-template-tag, .hljs-type {
+       color: #405945;
+
+   }
+
+   .hljs-number{
+       color: #3c8c74;
+   }
+
+   .hljs-attribute, .hljs-doctag, .hljs-keyword, .hljs-meta-keyword, .hljs-name, .hljs-selector-tag {
+       color: #749044;
+   }
+
+   .hljs-comment{
+       color:#d8c9a9;
+   }
