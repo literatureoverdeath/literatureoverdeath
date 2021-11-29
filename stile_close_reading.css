@@ -361,6 +361,7 @@ html {
         overflow-y: scroll;
         text-align: center;
         scroll-behavior: smooth;
+        margin: auto;
 }
 
 body.home{
@@ -482,3 +483,7 @@ article p{
     transition: transform .3s;
     
     }
+
+    span.navbar-toggler-icon{
+        background-color: #d8c9a9;
+       }

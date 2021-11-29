@@ -133,13 +133,332 @@
   <h2 class="title_extra"><span class="first-letter">I</span>nteractive <span class="first-letter">E</span>xtra <span class="first-letter">T</span>ool</h2>
   <p class="description_extra">We would like to add a final possibility for the user to interact with ours subcorpora and deeply perceive the degree of semantic affinity between them. After a structural division of the texts and a grammatical and semantical tagging, the purpose is to allow an automatic recombination of literary extracts so to create a new coherent poem.</p>
   
-  <h2>Word2Vec</h2>
+  <h2 class="title_extra"><span class="first-letter">W</span>ord<span class="first-letter">2V</span>ec</h2>
+  <p class="description_extra">After selecting the corpus to work on i.e. the collections of prose (diaries) and poetry of our authors, we proceeded with the cleaning of the individual files to process them. We therefore dedicated ourselves to the elimination of all forms of punctuation and capital letters and then dealt with stopwords. Since it was difficult to find a single set of Italian stopwords that met our needs, we integrated some words into the set of stopwords provided by NLTK that we considered not very influential for our research. Once the file was cleaned we proceeded to different types of analysis by training the model.</p>
 
+  
+  <div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+      <h3 class="h3_style">Preprocessing</h3>
+
+      <pre><code class="python">
+        import re  # For preprocessing
+        import pandas as pd  # For data handling
+        from time import time  # To time our operations
+        import subprocess
+        from collections import defaultdict  # For word frequency
+        import spacy
+        from spacy.lang.it.examples import sentences
+        import logging  # Setting up the loggings to monitor gensim
+        # Iniziamo importando tutto il necessario
+        import numpy as np
+        import matplotlib.pyplot as plt
+        import csv
+        from nltk.tokenize import word_tokenize
+        import pandas as pd
+        from nltk.stem import SnowballStemmer
+        from nltk.corpus import stopwords
+        import re
+        logging.basicConfig(format="%(levelname)s - %(asctime)s: %(message)s", datefmt= '%H:%M:%S', level=logging.INFO)
+
+        df = pd.read_csv('csv1948.csv', sep=';')
+        df.shape
+        df.head()
+        df.isnull().sum()
+        #Removing the missing values
+        df = df.dropna().reset_index(drop=True)
+        df.isnull().sum()
+
+        stemmer = SnowballStemmer('italian')
+        list_stw_imp = ["a","abbastanza","abbia","abbiamo","abbiano","abbiate","accidenti","ad","adesso","affinché","agl","agli","ahime","ahimè","ai","al","alcuna","alcuni","alcuno","all","alla","alle","allo","allora","altre","altri","altrimenti","altro","altrove","altrui","anche","ancora","anni","anno","ansa","anticipo","assai","attesa","attraverso","avanti","avemmo","avendo","avente","aver","avere","averlo","avesse","avessero","avessi","avessimo","aveste","avesti","avete","aveva","avevamo","avevano","avevate","avevi","avevo","avrai","avranno","avrebbe","avrebbero","avrei","avremmo","avremo","avreste","avresti","avrete","avrà","avrò","avuta","avute","avuti","avuto","ben","bene","benissimo","brava","bravo","buono","c","caso","cento","certa","certe","certi","certo","che","chi","chicchessia","chiunque","ci","ciascuna","ciascuno","cima","cinque","cio","cioe","cioè","circa","citta","ciò","co","codesta","codesti","codesto","cogli","coi","col","colei","coll","coloro","colui","come","cominci","comprare","comunque","con","concernente","consecutivi","consecutivo","consiglio","contro","cos","cosa","cosi","così","cui","d","da","dagl","dagli","dai","dal","dall","dalla","dalle","dallo","dappertutto","davanti","degl","degli","dei","del","dell","della","delle","dello","dentro","detto","deve","devo","di","dice","dietro","dire","dirimpetto","diventa","diventare","diventato","dopo","doppio","dov","dove","dovra","dovrà","dovunque","due","dunque","durante","e","ebbe","ebbero","ebbi","ecc","ecco","ed","effettivamente","egli","ella","entrambi","eppure","era","erano","eravamo","eravate","eri","ero","esempio","esse","essendo","esser","essere","essi","ex","fa","faccia","facciamo","facciano","facciate","faccio","facemmo","facendo","facesse","facessero","facessi","facessimo","faceste","facesti","faceva","facevamo","facevano","facevate","facevi","facevo","fai","fanno","farai","faranno","fare","farebbe","farebbero","farei","faremmo","faremo","fareste","faresti","farete","farà","farò","fatto","favore","fece","fecero","feci","fin","finalmente","finche","fine","fino","forse","forza","fosse","fossero","fossi","fossimo","foste","fosti","fra","frattempo","fu","fui","fummo","fuori","furono","futuro","generale","gente","gia","giacche","giorni","giorno","giu","già","gli","gliela","gliele","glieli","glielo","gliene","grande","grazie","gruppo","ha","haha","hai","hanno","ho","i","ie","ieri","il","improvviso","in","inc","indietro","infatti","inoltre","insieme","intanto","intorno","invece","io","l","la","lasciato","lato","le","lei","li","lo","lontano","loro","lui","lungo","luogo","là","ma","macche","magari","maggior","mai","male","malgrado","malissimo","me","medesimo","mediante","meglio","meno","mentre","mesi","mezzo","mi","mia","mie","miei","mila","miliardi","milioni","minimi","mio","modo","molta","molti","moltissimo","molto","momento","ne","negl","negli","nei","nel","nell","nella","nelle","nello","nemmeno","neppure","nessun","nessuna","nessuno","niente","no","noi","nome","non","nondimeno","nonostante","nonsia","nostra","nostre","nostri","nostro","novanta","nove","nulla","nuovi","nuovo","o","od","oggi","ogni","ognuna","ognuno","oltre","oppure","ora","ore","osi","ossia","ottanta","otto","paese","parecchi","parecchie","parecchio","parte","partendo","peccato","peggio","per","perche","perchè","perché","percio","perciò","perfino","pero","persino","persone","però","piedi","pieno","piglia","piu","piuttosto","più","po","pochissimo","poco","poi","poiche","possa","possedere","posteriore","posto","potrebbe","preferibilmente","presa","press","prima","primo","principalmente","probabilmente","promesso","proprio","puo","pure","purtroppo","può","qua","qualche","qualcosa","qualcuna","qualcuno","quale","quali","qualunque","quando","quanta","quante","quanti","quanto","quantunque","quarto","quasi","quattro","quel","quella","quelle","quelli","quello","quest","questa","queste","questi","questo","qui","quindi","quinto","realmente","recente","recentemente","registrazione","relativo","riecco","rispetto","salvo","sara","sarai","saranno","sarebbe","sarebbero","sarei","saremmo","saremo","sareste","saresti","sarete","sarà","sarò","scola","scopo","scorso","se","secondo","seguente","seguito","sei","sembra","sembrare","sembrato","sembrava","sembri","sempre","senza","sette","si","sia","siamo","siano","siate","siete","sig","solito","solo","soltanto","sono","sopra","soprattutto","sotto","spesso","sta","stai","stando","stanno","starai","staranno","starebbe","starebbero","starei","staremmo","staremo","stareste","staresti","starete","starà","starò","stata","state","stati","stato","stava","stavamo","stavano","stavate","stavi","stavo","stemmo","stessa","stesse","stessero","stessi","stessimo","stesso","steste","stesti","stette","stettero","stetti","stia","stiamo","stiano","stiate","sto","su","sua","subito","successivamente","successivo","sue","sugl","sugli","sui","sul","sull","sulla","sulle","sullo","suo","suoi","tale","tali","talvolta","tanto","te","tempo","terzo","th","ti","titolo","tra","tranne","tre","trenta","triplo","troppo","trovato","tu","tua","tue","tuo","tuoi","tutta","tuttavia","tutte","tutti","tutto","uguali","ulteriore","ultimo","un","una","uno","va","vai","vale","vari","varia","varie","vario","verso","vi","vicino","visto","voi","volta","volte","vostra","vostre","vostri","vostro","è"]
+        stop_words = set(stopwords.words('italian'))
+        for i in list_stw_imp:
+            stop_words.add(i)
+        print("INTEGRATED STOPWORDS", stop_words)
+        """
+        stop_words_list=list(stop_words)
+        stop_words_list_sorted = sorted(stop_words_list)
+        print("ALL THE STOPWORDS SORTED!!!",stop_words_list_sorted)
+        """
+
+        parole = list()
+        all_word_lists=[]
+        for row in df["raw_text"]:
+            passage_words=[]
+            for j in word_tokenize(str(row)):
+                lowered = j.lower()
+                if lowered not in stop_words:
+                    lowered = re.sub("[^\w]+", "", lowered)
+                    if lowered != "" and lowered:
+                        passage_words.append(lowered)
+                        for i in passage_words:
+                            i = re.sub( "[^\d]+", "", i)
+                            if i != "":
+                                passage_words.remove(i)
+                                for i in passage_words:
+                                    if len(i) <= 3:
+                                        passage_words.remove(i)
+
+            all_word_lists.append(passage_words)
+
+        for lst in all_word_lists:
+            for w in lst:
+                if len(w) <= 3 or w in stop_words:
+                    lst.remove(w)
+
+        print("LIST OF LISTS OF WORDS OF EACH PASSAGE:", all_word_lists)
+
+        print("STOPWORDS!!!!!!!!!!!!!!!!!!!!", stop_words)
+        my_vocab=[]
+        for l in all_word_lists:
+            for w in l:
+                my_vocab.append(w)
+        setvoc = set(my_vocab) #toglie i doppioni
+        sortedvoc=[]
+        for i in setvoc:
+            sortedvoc.append(i)
+        sortedvoc = sorted(sortedvoc)
+
+        print("ALL VOCABULARY WORDS NOT REPEATED AND SORTED:", sortedvoc)
+
+        def txt_all_word(lst):
+            lst2= []
+            for i in lst:
+                txt = " ".join(i)
+                ltxt = []
+                ltxt.append(txt)
+                lst2.append(ltxt)
+            print(lst2)
+            return lst2
+
+        print("EXAMPLE:", txt_all_word(all_word_lists))
+
+        df_clean = pd.DataFrame(np.array(txt_all_word(all_word_lists)),
+                                columns=["clean"])
+        df_clean = df_clean.dropna().drop_duplicates()
+        df_clean.shape
+        print("THIS IS DF_CLEAN:", df_clean)
+
+        #Automatically detect common phrases – aka multi-word expressions, word n-gram collocations – from a stream of sentences
+        from gensim.models.phrases import Phrases, Phraser
+        #INFO - ... stuff
+
+        #Phrases() takes a list of list of words as input:
+        #Creates the relevant phrases from the list of sentences:
+        sent = [row.split() for row in df_clean['clean']]
+        for lst in sent:
+            for w in lst:
+                if len(w) <= 3:
+                    lst.remove(w)
+
+        print("THIS IS SENT!!!!!!!!!!", sent)
+        phrases = Phrases(sent, min_count=3, progress_per=3)
+
+        #min_count (float, optional) – Ignore all words and bigrams with total collected count lower than this value --> 30 per noi è troppo
+        #progress_per (int, optional) – Indicates how many words to process before showing/updating the progress. --> 10000 è troppo? (sì perché conta a frasi (come poesia frase unica))
+
+
+        #Transform the corpus based on the bigrams detected:
+        bigram = Phraser(phrases) #!!!!
+        sentences = bigram[sent]
+
+        print("SENTENCES:", sentences)
+
+        #Most Frequent Words
+        # Mainly a sanity check of the effectiveness of the lemmatization, removal of stopwords, and addition of bigrams.
+        word_freq = defaultdict(int)
+        for sent in sentences:
+            for i in sent:
+                word_freq[i] += 1
+        lunghezza = len(word_freq) #2431 il nostro, contro le 29673 del corpus dell'esempio
+
+        print("WORD_FREQ LENGTH:", lunghezza, ", OVVERO UN", 29673 // lunghezza, "-esimo DELLA GRANDEZZA DEL CORPUS D'ESEMPIO (29673)" )
+
+        most_freq = sorted(word_freq, key=word_freq.get, reverse=True)[:10]
+        print("THESE ARE THE 10 MOST FREQUENT WORDS:", most_freq)
+      </code></pre>
+
+      <h3 class="h3_style">Training phase</h3>
+
+      <pre><code class="python">
+        #Training the model: Gensim Word2Vec Implementation
+        import multiprocessing
+        from gensim.models import Word2Vec
+
+        #seperate the training of the model in 3 steps:
+        # 1) Word2Vec(): set up the parameters of the model one-by-one. Don't supply parameter sentences (leave the model uninitialized)
+        # 2) .build_vocab():  build vocabulary from a sequence of sentences, thus initializing the model -- With loggings we follow the progress and the effect of min_count + sample on the word corpus.
+        # 3) .train(): loggings here are mainly useful for monitoring, making sure that no threads are executed instantaneously.
+
+        cores = multiprocessing.cpu_count() # Count the number of cores in a computer
+
+        #PARAMETERS:
+        # min_count = int - Ignores all words with total absolute frequency lower than this - (2, 100)
+        # window = int - The maximum distance between the current and predicted word within a sentence. E.g. window words on the left and window words on the right of our target - (2, 10)
+        # size = int - Dimensionality of the feature vectors. - (50, 300)
+        # sample = float - The threshold for configuring which higher-frequency words are randomly downsampled. Highly influencial. - (0, 1e-5)
+        # alpha = float - The initial learning rate - (0.01, 0.05)
+        # min_alpha = float - Learning rate will linearly drop to min_alpha as training progresses. To set it: alpha - (min_alpha * epochs) ~ 0.00
+        # negative = int - If > 0, negative sampling will be used, the int for negative specifies how many "noise words" should be drown. If set to 0, no negative sampling is used. - (5, 20)
+        # workers = int - Use these many worker threads to train the model (=faster training with multicore machines)
+
+
+        #parametri da resettare
+        w2v_model = Word2Vec(min_count=2,
+                            window=2,
+                            size=50,
+                            sample=1e-5,
+                            alpha=0.03,
+                            min_alpha=0.007,
+                            negative=1,
+                            workers=cores-1)
+
+        #VOCABULARY TABLE (digesting all words + filtering out unique words + some basic counts on them)
+        t = time()
+        w2v_model.build_vocab(sentences, progress_per=140) #approssimato a 1/70esimo del valore proposto, conformemente con la dimensione del corpus
+        print('Time to build vocab: {} mins'.format(round((time() - t) / 60, 2)))
+
+        #TRAINING THE MODEL
+        #Parameters:
+        # total_examples = int - Count of sentences;
+        # epochs = int - Number of iterations (epochs) over the corpus - [10, 20, 30]
+
+        t = time()
+        w2v_model.train(sentences, total_examples=w2v_model.corpus_count, epochs=10, report_delay=1)
+        print('Time to train the model: {} mins'.format(round((time() - t) / 60, 2)))
+
+        #we do not plan to train the model any further == we call init_sims(), which makes the model much more memory-efficient
+
+        w2v_model.init_sims(replace=True)
+
+      </code></pre>
+
+      <h3 class="h3_style">Most frequent words</h3>
+
+      <pre><code class="python">
+        #MOST SIMILAR TO
+
+        sim_to_cose = w2v_model.wv.most_similar(positive=["cose"])
+        print("COSE:", sim_to_cose)
+
+        sim_to_vita = w2v_model.wv.most_similar(positive=["vita"])
+        print("VITA:", sim_to_vita)
+
+        sim_to_real = w2v_model.wv.most_similar(positive=["realtà"])
+        print("REALTA:", sim_to_real)
+
+        sim_to_uomo = w2v_model.wv.most_similar(positive=["uomo"])
+        print("UOMO:", sim_to_uomo)
+
+        sim_to_donne = w2v_model.wv.most_similar(positive=["donne"])
+        print("DONNE:", sim_to_donne)
+
+        sim_to_poesia = w2v_model.wv.most_similar(positive=["poesia"])
+        print("POESIA:", sim_to_poesia)
+
+        sim_to_donna = w2v_model.wv.most_similar(positive=["donna"])
+        print("DONNA:", sim_to_donna)
+
+        sim_to_mondo = w2v_model.wv.most_similar(positive=["mondo"])
+        print("MONDO:", sim_to_mondo)
+
+        sim_to_morte = w2v_model.wv.most_similar(positive=["morte"])
+        print("MORTE:", sim_to_morte)
+
+        sim_to_suicidio = w2v_model.wv.most_similar(positive=["suicidio"])
+        print("SUICIDIO:", sim_to_suicidio)
+
+      </code></pre>
+
+      <h4 class="h4_style">Results</h4>
+
+      <pre><code class="python">
+      COSE: [('favola', 0.44694748520851135), ('estate', 0.43423330783843994), ('genere', 0.4074716866016388), ('titanismo', 0.3960016071796417), ('fatta', 0.3838179111480713), ('libri', 0.36109548807144165), ('agosto', 0.3447675108909607), ('umana', 0.3409634232521057), ('sforzo', 0.3385457396507263), ('seconda', 0.32157787680625916)]
+      VITA: [('tragico', 0.3955136239528656), ('notato', 0.39209607243537903), ('vogliono', 0.37821951508522034), ('conto', 0.35607972741127014), ('accompagna', 0.3399878144264221), ('cinese', 0.33984097838401794), ('ontani', 0.3386537730693817), ('progressivo', 0.3327280282974243), ('discussione', 0.3313167989253998), ('espressione', 0.32912468910217285)]
+      REALTA: [('prende', 0.4918295443058014), ('occhi', 0.47790220379829407), ('caos', 0.44134896993637085), ('modi', 0.4221399128437042), ('ottiene', 0.4155784845352173), ('cinina', 0.4121091961860657), ('salda', 0.35765016078948975), ('politica', 0.3548431992530823), ('specialmente', 0.3533804416656494), ('accorgi', 0.34901663661003113)]
+      UOMO: [('sottinteso', 0.4349732995033264), ('rode', 0.40164637565612793), ('parli', 0.3637748956680298), ('dura', 0.35388824343681335), ('olimpico', 0.3456587791442871), ('vuole', 0.3351890444755554), ('animali', 0.31960010528564453), ('accettabile', 0.30826494097709656), ('altra', 0.30818331241607666), ('struttura', 0.3033643960952759)]
+      DONNE: [('orrore', 0.5181577205657959), ('infantile', 0.44521400332450867), ('professione', 0.41753044724464417), ('intende', 0.4050731062889099), ('spunti', 0.40121057629585266), ('prime', 0.3989715576171875), ('situazioni', 0.39164310693740845), ('scrivo', 0.37072715163230896), ('miri', 0.35835200548171997), ('inutile', 0.34407123923301697)]
+      POESIA: [('azione', 0.43797236680984497), ('prurito', 0.41349178552627563), ('complesso', 0.40417832136154175), ('ultimi', 0.3532313406467438), ('lavoro', 0.35124701261520386), ('alberi', 0.3425488770008087), ('popoli', 0.3420373201370239), ('atomica', 0.33996710181236267), ('preti', 0.3342474102973938), ('civile', 0.32853490114212036)]
+      DONNA: [('amori', 0.4436589479446411), ('sacro', 0.41755640506744385), ('cominciato', 0.395077109336853), ('periodo', 0.39493730664253235), ('coerente', 0.38943737745285034), ('dimostra', 0.38310137391090393), ('exploit', 0.3824920952320099), ('significato', 0.3753378987312317), ('mano', 0.3606840968132019), ('morte', 0.3606828451156616)]
+      MONDO: [('preparazione', 0.43181630969047546), ('rispondo', 0.4183335304260254), ('crisi', 0.4182364046573639), ('donne_sole', 0.39838942885398865), ('specialmente', 0.37740984559059143), ('ultimi', 0.3731614649295807), ('inconscio', 0.354659765958786), ('uguale', 0.35231488943099976), ('sentire', 0.3501971364021301), ('morte', 0.34979140758514404)]
+      MORTE: [('descritto', 0.43685096502304077), ('autentico', 0.37394678592681885), ('titanica', 0.3681871294975281), ('donna', 0.3606828451156616), ('mondo', 0.34979140758514404), ('colline', 0.34355032444000244), ('lavori', 0.330923467874527), ('amori', 0.32938987016677856), ('risponde', 0.3232964873313904), ('persona', 0.3225821852684021)]
+      SUICIDIO: [('giornata', 0.45020756125450134), ('nascono', 0.43164923787117004), ('somiglia', 0.38713186979293823), ('pavese', 0.37489795684814453), ('caos', 0.3494200110435486), ('dolcezza', 0.34243008494377136), ('stile', 0.3325712978839874), ('indemoniato', 0.33237504959106445), ('sacro', 0.32676011323928833), ('convinzione', 0.3241626024246216)]
+
+
+      </code></pre>
+       
+     <h3 class="h3_style">Most dissimilar words</h3> 
+     <pre><code class="python">
+      #MOST DISSIMILAR TO
+      disim_to_morte = w2v_model.wv.most_similar(negative=["morte"])
+      print("DISS TO MORTE:", disim_to_morte)
+      
+      disim_to_donna = w2v_model.wv.most_similar(negative=["donna"])
+      print("DISS TO DONNA:", disim_to_donna)
+      
+      disim_to_vita = w2v_model.wv.most_similar(negative=["vita"])
+      print("DISS TO VITA:", disim_to_vita)
+      
+      disim_to_poesia = w2v_model.wv.most_similar(negative=["poesia"])
+      print("DISS TO POESIA:", disim_to_poesia)
+     </code></pre>
+
+     <h4 class="h4_style">Results</h4>
+
+     <pre><code class="python">
+      DISS TO MORTE: [('porta', 0.4592011570930481), ('riesce', 0.44460710883140564), ('danno', 0.4366005063056946), ('vissuto', 0.3965562880039215), ('rimpiangere', 0.3825499713420868), ('granted', 0.3776231110095978), ('buona', 0.36516088247299194), ('fisica', 0.3636593818664551), ('propri', 0.3485255241394043), ('insofferenza', 0.32548314332962036)]
+      DISS TO DONNA: [('shakespeare', 0.6026923060417175), ('anzi', 0.4556097686290741), ('posso', 0.45407164096832275), ('esso', 0.4277831017971039), ('rode', 0.41417255997657776), ('scrivere', 0.3647797107696533), ('cerchiamo', 0.36451131105422974), ('mondi', 0.3604092001914978), ('politica', 0.35131198167800903), ('materialità', 0.34250274300575256)]
+      DISS TO VITA: [('bella', 0.422878623008728), ('affermazione', 0.3739604353904724), ('farti', 0.3682698607444763), ('tradizione', 0.36807113885879517), ('wistful', 0.3607098460197449), ('suicidio', 0.3533186912536621), ('parlavo', 0.3515882194042206), ('sapere', 0.33795425295829773), ('pena', 0.335112065076828), ('sensazioni', 0.3319331407546997)]
+      DISS TO POESIA: [('pioggia', 0.4283095598220825), ('passato', 0.40080830454826355), ('aspetto', 0.3972211182117462), ('superbia', 0.3852415382862091), ('effetto', 0.3743497133255005), ('magico', 0.37078192830085754), ('naturali', 0.3498339056968689), ('teatro', 0.34446683526039124), ('superata', 0.3444368839263916), ('film', 0.3270077705383301)]
+      
+     </code></pre>
+
+     <h3 class="h3_style">Similarities</h3> 
+     <pre><code class="python">
+        #SIMILARITIES
+
+        simil_life_death = w2v_model.wv.similarity("vita", "morte")
+        print("SIM VITA MORTE :", simil_life_death)
+
+        simil_dawn_death = w2v_model.wv.similarity("suicidio", "morte")
+        print("SIM SUICIDIO MORTE:", simil_dawn_death)
+
+        simil_blood_death = w2v_model.wv.similarity("donna", "uomo")
+        print("SIM DONNA UOMO:", simil_blood_death)
+     </code></pre>
+
+     <h4 class="h4_style">Results</h4>
+
+     <pre><code class="python">
+        SIM VITA MORTE : 0.35996348
+        SIM SUICIDIO MORTE: -0.13094307
+        SIM DONNA UOMO: 0.2850873
+      </code></pre>
+
+      <h3 class="h3_style">Odd one out</h3> 
+     <pre><code class="python">
+      #ODD-ONE-OUT (corpus troppo piccolo?)
+      odd = w2v_model.wv.doesnt_match(['donna', 'uomo', 'pioggia'])
+      print("ODD:", odd)
+     </code></pre>
+
+     <h4 class="h4_style">Results</h4>
+
+     <pre><code class="python">
+      ODD: pioggia
+      </code></pre>
+
+
+    </div>
+    <div class="col-md-3"></div>
+  </div>
+  <h3 class="h3_style">Visualization</h3> 
   <div class="row">
     <div class="col-md-3"></div>
     <div class="col-md-6">
       <div class="img-magnifier-container">
-        <img id="myimage" src="mestiere_viz_1.png" width="600" height="400" alt="Girl">
+        <img id="myimage" src="word2wec_graph.svg" width="600" height="400" alt="Girl">
       </div>
   
       <script>
@@ -253,6 +572,7 @@
                     <a href="mailto:francesca.genovese2@studio.unibo.it">francesca.genovese2@studio.unibo.it</a><br>
                     <a href="mailto:giulia.manganelli3@studio.unibo.it">giulia.manganelli3@studio.unibo.it</a><br>
                     <a href="mailto:arianna.moretti2@studio.unibo.it">arianna.moretti2@studio.unibo.it</a>
+                    <a href="mailto:elia.rizzetto@studio.unibo.it">elia.rizzetto@studio.unibo.it</a>
                 </p>
             </div>
         </div>

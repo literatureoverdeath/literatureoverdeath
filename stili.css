@@ -723,3 +723,8 @@ div .dropdown-menu{
     border-radius: 10px;
     box-shadow: inset 7px 10px 12px #f0f0f0;
    }
+
+   span.navbar-toggler-icon{
+    background-color: #d8c9a9;
+    outline: 0;
+   }

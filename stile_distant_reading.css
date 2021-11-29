@@ -429,6 +429,43 @@ body.home{
       font-weight: bolder;
   }
 
-  .img_pavese{
+  .img_pavese_1{
       opacity: 0.7;
+      
   }
+
+  .img_pavese_1 img{
+    width: 50%;
+  }
+
+  .img_pavese_2 img{
+    width: 50%;
+    opacity: 0.7;
+  }
+
+  .img_plath_1 img{
+    width: 50%;
+    opacity: 0.7;
+      
+  }
+
+  .img_plath_2 img{
+    width: 50%;
+    opacity: 0.7;
+      
+  }
+
+  .img_woolf_1 img{
+    width: 50%;
+    opacity: 0.7;
+  }
+
+  .img_woolf_2 img{
+    width: 50%;
+    opacity: 0.7;
+
+  }
+
+  span.navbar-toggler-icon{
+    background-color: #d8c9a9;
+   }
