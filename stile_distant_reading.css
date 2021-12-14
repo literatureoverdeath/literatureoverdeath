@@ -254,6 +254,14 @@ a {
     white-space: normal !important;
 }
 
+.container{
+    margin: auto;
+}
+
+.whole{
+    margin-left: 3%;
+}
+
 
 
 #footerdiv{

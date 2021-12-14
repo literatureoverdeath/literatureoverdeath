@@ -1,6 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <style>
+      table {
+        font-family: 'Another Typewriter';
+        border-collapse: collapse;
+        width: 50%;
+    }
+
+    td, th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+
+  
+  </style>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -236,50 +251,212 @@
   <h2 class="title_topic_modeling"><span class="first-letter">T</span>opic <span class="first-letter">M</span>odeling</h2>
   <p class="description_topic_modeling">We will exploit this statistical model to extract the hidden semantic structure of every text, subcorpora and global corpus.</p>
   <div class="row">
-      <div class="col-md-3"></div>
-      <div class="col-md-6">
-        <!---<iframe style="width: 80%; height: 80vh; border-radius: 50%; margin-bottom: 5%;" src="word_cloud_new.html" title="example"></iframe>--->
-        <h3>Whole corpus</h3>
-        <iframe style='width: 477px; height: 400px;' src='https://voyant-tools.org/tool/Cirrus/?lang=en&corpus=54ca9d9665c736e6b58db6daccd4a9b5'></iframe>
-        <br>
-        <br>
-        <h3>Silvia Plath poetry and prose</h3>
-        <iframe style='width: 509px; height: 343px;' src='https://voyant-tools.org/tool/Cirrus/?corpus=7869581c012d195446d784e65b24deb9'></iframe> 
-        <br>
-        <br>
-        <h3>Virginia Woolf poetry and prose</h3>
-        <iframe style='width: 509px; height: 343px;' src='https://voyant-tools.org/tool/Cirrus/?corpus=c70e0aea21e1333f0e35e54515de2fbc'></iframe> 
-        <br>
-        <br>
-        <h3>Cesare Pavese poetry and prose</h3>
-        <iframe style='width: 509px; height: 343px;' src='https://voyant-tools.org/tool/Cirrus/?corpus=cd2641e7274f75b1ccaeb1140e8189b0'></iframe> 
-        <br>
-        <br>
-        <h3>Virginia woolf</h3>
-        <div style="display: flex;">
-          <iframe style='width: 477px; height: 398px; margin-right: 10px;' src='https://voyant-tools.org/tool/Cirrus/?stopList=keywords-d315a99a421cba311c626531d6b5df11&whiteList=&corpus=a284901eeb67bf7fc36847767edfb1b7'></iframe>
-          <iframe style='width: 477px; height: 398px;' src='https://voyant-tools.org/tool/Cirrus/?corpus=8df719050b217c342cfc9f5e6cdc7e09'></iframe>
-        </div>
-        <br>
-        <br>
-        <h3>Silvia Plath</h3> 
-        <div style="display: flex;">
-          <iframe style='width: 477px; height: 398px; margin-right: 10px;' src='https://voyant-tools.org/tool/Cirrus/?corpus=096e28915e8183de91eab8d12f113348'></iframe>
-          <iframe style='width: 477px; height: 398px;' src='https://voyant-tools.org/tool/Cirrus/?corpus=f4cb910e01bde5afdf7fc404becfa16d'></iframe>
-        </div>
-        <br>
-        <br>
-        <h3>Cesare Pavese</h3> 
-        <div style="display: flex;">
-          <iframe style='width: 477px; height: 400px; margin-right: 10px;' src='https://voyant-tools.org/tool/Cirrus/?corpus=b0a764e9854252b5e058b894ce455b3a'></iframe>
-          <iframe style='width: 477px; height: 398px;' src='https://voyant-tools.org/tool/Cirrus/?corpus=683aaaa7e91f52004a033b2a76837394'></iframe>
-        </div>
-
-  
+      <div class="col-md-4">
+        <center><h3>Whole corpus</h3></center>
+        <iframe class="whole" style='width: 477px; height: 400px;' src='https://voyant-tools.org/tool/Cirrus/?lang=en&corpus=54ca9d9665c736e6b58db6daccd4a9b5'></iframe>
       </div>
-      <div class="col-md-3"></div>
+      <div class="col-md-4">
+        <center><h3>Poetry</h3></center>
+        <!---<iframe style="width: 80%; height: 80vh; border-radius: 50%; margin-bottom: 5%;" src="word_cloud_new.html" title="example"></iframe>--->
+        <div id="carouselExampleIndicators-1" class="carousel slide" data-ride="carousel" data-interval="false">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="carousel-caption d-none d-md-block" style="color: black;">Selected Poems - Cesare Pavese</div>
+              <iframe class="d-block w-100" style='width: 477px; height: 398px;' src='https://voyant-tools.org/tool/Cirrus/?corpus=683aaaa7e91f52004a033b2a76837394'></iframe>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-caption d-none d-md-block" style="color: black;">Ariel - Silvia Plath</div>
+              <iframe class="d-block w-100" style='width: 477px; height: 398px;' src='https://voyant-tools.org/tool/Cirrus/?corpus=096e28915e8183de91eab8d12f113348'></iframe>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-caption d-none d-md-block" style="color: black;">Waves - Virginia Woolf</div>
+              <iframe class="d-block w-100" style='width: 477px; height: 398px;' src='https://voyant-tools.org/tool/Cirrus/?corpus=8df719050b217c342cfc9f5e6cdc7e09'></iframe>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators-1" role="button" data-slide="prev" style="height: 30px; margin: auto;">
+            <span class="carousel-control-prev-icon" aria-hidden="true" style="background-color: black;"></span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators-1" role="button" data-slide="next" style="height: 30px; margin: auto;">
+            <span class="carousel-control-next-icon" aria-hidden="true"  style="background-color: black;"></span>
+          </a>
+        </div>
+              
+      </div>
+      <div class="col-md-4">
+        <center><h3>Prose</h3></center>
+        
+        <div id="carouselExampleIndicators-2" class="carousel slide" data-ride="carousel" style="margin-right: 3%;" data-interval="false">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="carousel-caption d-none d-md-block" style="color: black;">The Buisiness of Living - Cesare Pavese</div>
+              <iframe class="d-block w-100" style='width: 477px; height: 400px;' src='https://voyant-tools.org/tool/Cirrus/?corpus=b0a764e9854252b5e058b894ce455b3a'></iframe>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-caption d-none d-md-block" style="color: black;">Unabridged Diary - Silvia Plath</div>
+              <iframe class="d-block w-100" style='width: 477px; height: 398px;' src='https://voyant-tools.org/tool/Cirrus/?corpus=f4cb910e01bde5afdf7fc404becfa16d'></iframe>
+
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-caption d-none d-md-block" style="color: black;">A Writer’s Diary - Virginia Woolf</div>
+              <iframe class="d-block w-100" style='width: 477px; height: 398px;' src='https://voyant-tools.org/tool/Cirrus/?stopList=keywords-d315a99a421cba311c626531d6b5df11&whiteList=&corpus=a284901eeb67bf7fc36847767edfb1b7'></iframe>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators-2" role="button" data-slide="prev" style="height: 30px; margin: auto;">
+            <span class="carousel-control-prev-icon" aria-hidden="true" style="background-color: black;"></span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators-2" role="button" data-slide="next" style="height: 30px; margin: auto;">
+            <span class="carousel-control-next-icon" aria-hidden="true"  style="background-color: black;"></span>
+          </a>
+        </div>
+              
+
+      </div>
   </div>
+  <div class="row">
+   
+    <div class="col-md-12" style="text-align: center;">
+      <h3>SCATTERPLOT - whole corpus </h3> 
+      <p>testo</p>
+      <iframe style='width: 1211px; height: 477px;' src='https://voyant-tools.org/tool/ScatterPlot/?lang=en&stopList=keywords-e96adfe4149db5c61c42b4c742f8a6f1&limit=62&dimensions=2&comparisonType=raw&panels=cirrus%2Creader%2Ctrends%2Csummary%2Ccontexts&corpus=54ca9d9665c736e6b58db6daccd4a9b5'></iframe> 
+    </div>
+   </div>
+  </div>
+   <br>
+   <br>
+   <div class="row">
+    <div class="col-md-6">
+      <center><h3>Trends in Business of Living</h3></center>
+      <p>testo</p>
+      <div id="carouselExampleIndicators-3" class="carousel slide" data-ride="carousel" style="width: 100%;" data-interval="false">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="carousel-caption d-none d-md-block" style="background-color: black; width: 30%; margin: auto;">Death- Suicide </div>
+            <iframe style='width: 577px; height: 498px;' src='https://voyant-tools.org/tool/Trends/?palette=extjs&query=suicide*&query=death*&withDistributions=raw&mode=document&corpus=046d56b937794e16dcec097e82efe729'></iframe> 
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-caption d-none d-md-block" style="background-color: black; width: 30%; margin: auto;">woman - women</div>
+            <iframe style='width: 577px; height: 498px;' src='https://voyant-tools.org/tool/Trends/?palette=extjs&query=women*&query=woman*&withDistributions=raw&mode=document&corpus=046d56b937794e16dcec097e82efe729'></iframe> 
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-caption d-none d-md-block" style="background-color: black; width: 30%; margin: auto;">work - love</div>
+            <iframe style='width: 577px; height: 498px;' src='https://voyant-tools.org/tool/Trends/?palette=extjs&query=love*&query=work*&withDistributions=raw&mode=document&corpus=046d56b937794e16dcec097e82efe729'></iframe> 
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-caption d-none d-md-block" style="background-color: black; width: 30%; margin: auto;">pleasure - suffer</div>
+            <iframe style='width: 577px; height: 498px;' src='https://voyant-tools.org/tool/Trends/?palette=extjs&query=pleasure*&query=suffer*&withDistributions=raw&mode=document&corpus=046d56b937794e16dcec097e82efe729'></iframe> 
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators-3" role="button" data-slide="prev" style="height: 30px; margin: auto;">
+          <span class="carousel-control-prev-icon" aria-hidden="true" style="background-color: black;"></span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators-3" role="button" data-slide="next" style="height: 30px; margin: auto;">
+          <span class="carousel-control-next-icon" aria-hidden="true"  style="background-color: black;"></span>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <center><h3>Trends in whole corpus</h3></center>
+      <p>testo</p>
+      <div id="carouselExampleIndicators-4" class="carousel slide" data-ride="carousel" style="width: 100%;" data-interval="false">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="carousel-caption d-none d-md-block" style="background-color: black; width: 30%; margin: auto;">pleasure - suffer</div>
+            <iframe style='width: 577px; height: 498px;' src='https://voyant-tools.org/tool/Trends/?query=pleasur*&query=suffer*&corpus=9977aa1c6cabfb9a54835b617982e129'></iframe>
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-caption d-none d-md-block" style="background-color: black; width: 30%; margin: auto;">work - love</div>
+            <iframe style='width: 577px; height: 498px;' src='https://voyant-tools.org/tool/Trends/?palette=extjs&query=lov*&query=work*&corpus=9977aa1c6cabfb9a54835b617982e129'></iframe> 
+          </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators-4" role="button" data-slide="prev" style="height: 30px; margin: auto;">
+          <span class="carousel-control-prev-icon" aria-hidden="true" style="background-color: black;"></span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators-4" role="button" data-slide="next" style="height: 30px; margin: auto;">
+          <span class="carousel-control-next-icon" aria-hidden="true"  style="background-color: black;"></span>
+        </a>
+      </div>
+    </div>
+  </div>
+  
 </div>
+<br>
+<br>
+
+<div class="row">
+  <div class="col-md-12" style="text-align: center;">
+    <center><h3>Corpus Termes + Topics</h3></center>
+    <p>testo</p>
+    <table style="margin:auto;">
+      <tr>
+        <th>This Business of Living </th>
+        <th>Whole corpus</th>
+      </tr>
+      <tr>
+        <td>Dates, months : related to diary structure + poetry’s dates</td>
+        <td>Woolf’s production (references to her own literary works)</td>
+      </tr>
+      <tr>
+        <td>Symbolism, poetry and memory</td>
+        <td>Ancient literary works (greek, book, chapter)</td>
+      </tr>
+      <tr>
+        <td>Myth and culture</td>
+        <td>Visual imagery of quiet and relief</td>
+      </tr>
+      <tr>
+        <td>Physical aging (body, old, born..)</td>
+        <td>Male - Female interactions</td>
+      </tr>
+      <tr>
+        <td>Visual aspects of poetry (images, poems)</td>
+        <td>Literature-related field (review, method, content)</td>
+      </tr>
+      <tr>
+        <td>Language and dialogue</td>
+        <td>Time-related expressions (morning, yesterday, days)</td>
+      </tr>
+      <tr>
+        <td>Sacred, gods, superstition</td>
+        <td>Writers’ activities (think, write, book, reading …) </td>
+      </tr>
+      <tr>
+        <td>Experiences and imagination</td>
+        <td>Time passing and aging (day, come, death, years, reached)</td>
+      </tr>
+      <tr>
+        <td>Work, art and knowledge</td>
+        <td>Feminine (lady, women, young …)</td>
+      </tr>
+      <tr>
+        <td>Love (man, woman, love)</td>
+        <td>description of experiences and physical sensations and perceptions (fresh, air, colors… )</td>
+      </tr>
+    </table>
+
+  </div>
+
+</div>
+
+
 
 
 
