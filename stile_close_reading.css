@@ -456,7 +456,7 @@ article p{
    button#similitude{
     border: transparent;
     border-radius: 10%;
-    color:#749044;
+    color:#3c8c74;
     width: 8rem;
     height: 3rem;
     font-size: 23px;
@@ -465,6 +465,72 @@ article p{
     margin-top: 3rem;
     
     }
+
+    button#metonymy{
+        border: transparent;
+        border-radius: 10%;
+        color:#749044;
+        width: 8rem;
+        height: 3rem;
+        font-size: 23px;
+        font-weight: bolder;
+        transition: transform .3s;
+        margin-top: 3rem;
+        
+        }
+
+        button#analogy{
+            border: transparent;
+            border-radius: 10%;
+            color:#749044;
+            width: 8rem;
+            height: 3rem;
+            font-size: 23px;
+            font-weight: bolder;
+            transition: transform .3s;
+            margin-top: 3rem;
+            
+            }
+
+            button#anaphora{
+                border: transparent;
+                border-radius: 10%;
+                color:#749044;
+                width: 8rem;
+                height: 3rem;
+                font-size: 23px;
+                font-weight: bolder;
+                transition: transform .3s;
+                margin-top: 3rem;
+                
+                }
+            
+                button#enjambement{
+                    border: transparent;
+                    border-radius: 10%;
+                    color:#749044;
+                    width: 8rem;
+                    height: 3rem;
+                    font-size: 23px;
+                    font-weight: bolder;
+                    transition: transform .3s;
+                    margin-top: 3rem;
+                    
+                    }
+                
+                    button#climax{
+                        border: transparent;
+                        border-radius: 10%;
+                        color:#749044;
+                        width: 8rem;
+                        height: 3rem;
+                        font-size: 23px;
+                        font-weight: bolder;
+                        transition: transform .3s;
+                        margin-top: 3rem;
+                        
+                        }
+            
 
     button#similitude:hover, button#metaphor:hover{
         transform: scale(0.9);
