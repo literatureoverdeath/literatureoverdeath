@@ -477,3 +477,7 @@ body.home{
   span.navbar-toggler-icon{
     background-color: #d8c9a9;
    }
+
+   text{
+       font-size: 10px;
+   }

@@ -296,22 +296,22 @@
           <div class="carousel-inner">
             <div class="carousel-item active">
               <div class="carousel-caption d-none d-md-block" style="color: black;">Selected Poems - Cesare Pavese</div>
-              <iframe class="d-block w-100" style='width: 477px; height: 398px;' src='https://voyant-tools.org/tool/Cirrus/?corpus=683aaaa7e91f52004a033b2a76837394'></iframe>
+              <iframe class="d-block w-100 poetry_iframes" style='width: 477px; height: 398px;' src='https://voyant-tools.org/tool/Cirrus/?corpus=683aaaa7e91f52004a033b2a76837394'></iframe>
             </div>
             <div class="carousel-item">
               <div class="carousel-caption d-none d-md-block" style="color: black;">Ariel - Silvia Plath</div>
-              <iframe class="d-block w-100" style='width: 477px; height: 398px;' src='https://voyant-tools.org/tool/Cirrus/?corpus=096e28915e8183de91eab8d12f113348'></iframe>
+              <iframe class="d-block w-100 poetry_iframes" style='width: 477px; height: 398px;' src='https://voyant-tools.org/tool/Cirrus/?corpus=096e28915e8183de91eab8d12f113348'></iframe>
             </div>
             <div class="carousel-item">
               <div class="carousel-caption d-none d-md-block" style="color: black;">Waves - Virginia Woolf</div>
-              <iframe class="d-block w-100" style='width: 477px; height: 398px;' src='https://voyant-tools.org/tool/Cirrus/?corpus=8df719050b217c342cfc9f5e6cdc7e09'></iframe>
+              <iframe class="d-block w-100 poetry_iframes" style='width: 477px; height: 398px;' src='https://voyant-tools.org/tool/Cirrus/?corpus=8df719050b217c342cfc9f5e6cdc7e09'></iframe>
             </div>
           </div>
           <a class="carousel-control-prev" href="#carouselExampleIndicators-1" role="button" data-slide="prev" style="height: 30px; margin: auto;">
-            <span class="carousel-control-prev-icon" aria-hidden="true" style="background-color: black;"></span>
+            <span class="carousel-control-prev-icon" aria-hidden="true" style="background-color: black;" onclick="reloadIframes('poetry_iframes')"></span>
           </a>
           <a class="carousel-control-next" href="#carouselExampleIndicators-1" role="button" data-slide="next" style="height: 30px; margin: auto;">
-            <span class="carousel-control-next-icon" aria-hidden="true"  style="background-color: black;"></span>
+            <span class="carousel-control-next-icon" aria-hidden="true"  style="background-color: black;" onclick="reloadIframes('poetry_iframes')"></span>
           </a>
         </div>
               
@@ -328,23 +328,23 @@
           <div class="carousel-inner">
             <div class="carousel-item active">
               <div class="carousel-caption d-none d-md-block" style="color: black;">The Buisiness of Living - Cesare Pavese</div>
-              <iframe class="d-block w-100" style='width: 477px; height: 400px;' src='https://voyant-tools.org/tool/Cirrus/?corpus=b0a764e9854252b5e058b894ce455b3a'></iframe>
+              <iframe class="d-block w-100 prose_iframes" style='width: 477px; height: 400px;' src='https://voyant-tools.org/tool/Cirrus/?corpus=b0a764e9854252b5e058b894ce455b3a'></iframe>
             </div>
             <div class="carousel-item">
               <div class="carousel-caption d-none d-md-block" style="color: black;">Unabridged Diary - Silvia Plath</div>
-              <iframe class="d-block w-100" style='width: 477px; height: 398px;' src='https://voyant-tools.org/tool/Cirrus/?corpus=f4cb910e01bde5afdf7fc404becfa16d'></iframe>
+              <iframe class="d-block w-100 prose_iframes" style='width: 477px; height: 398px;' src='https://voyant-tools.org/tool/Cirrus/?corpus=f4cb910e01bde5afdf7fc404becfa16d'></iframe>
 
             </div>
             <div class="carousel-item">
               <div class="carousel-caption d-none d-md-block" style="color: black;">A Writer’s Diary - Virginia Woolf</div>
-              <iframe class="d-block w-100" style='width: 477px; height: 398px;' src='https://voyant-tools.org/tool/Cirrus/?stopList=keywords-d315a99a421cba311c626531d6b5df11&whiteList=&corpus=a284901eeb67bf7fc36847767edfb1b7'></iframe>
+              <iframe class="d-block w-100 prose_iframes" style='width: 477px; height: 398px;' src='https://voyant-tools.org/tool/Cirrus/?stopList=keywords-d315a99a421cba311c626531d6b5df11&whiteList=&corpus=a284901eeb67bf7fc36847767edfb1b7'></iframe>
             </div>
           </div>
           <a class="carousel-control-prev" href="#carouselExampleIndicators-2" role="button" data-slide="prev" style="height: 30px; margin: auto;">
-            <span class="carousel-control-prev-icon" aria-hidden="true" style="background-color: black;"></span>
+            <span class="carousel-control-prev-icon" aria-hidden="true" style="background-color: black;" onclick="reloadIframes('prose_iframes')"></span>
           </a>
           <a class="carousel-control-next" href="#carouselExampleIndicators-2" role="button" data-slide="next" style="height: 30px; margin: auto;">
-            <span class="carousel-control-next-icon" aria-hidden="true"  style="background-color: black;"></span>
+            <span class="carousel-control-next-icon" aria-hidden="true"  style="background-color: black;" onclick="reloadIframes('prose_iframes')"></span>
           </a>
         </div>
               
@@ -526,5 +526,14 @@
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script>
+  function reloadIframes(class_iframe){
+    const elements = document.getElementsByClassName(class_iframe);
+    for (el in elements){
+      console.log(el)
+      elements[el].src = elements[el].src;
+    }
+  }
+</script>
 </body>
 </html>

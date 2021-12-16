@@ -364,6 +364,18 @@ html {
         margin: auto;
 }
 
+div#container_critica{
+    color: white;
+    background-color: black;
+    overflow-y: scroll;
+    text-align: center;
+    scroll-behavior: smooth;
+    width: 20vw;
+    height: 50vh;
+    margin-top: 18%;
+    
+}
+
 body.home{
     background-color: #405945;
 }
@@ -457,9 +469,9 @@ article p{
     border: transparent;
     border-radius: 10%;
     color:#3c8c74;
-    width: 8rem;
-    height: 3rem;
-    font-size: 23px;
+    width: 5rem;
+    height: 2rem;
+    font-size: 15px;
     font-weight: bolder;
     transition: transform .3s;
     margin-top: 3rem;
@@ -470,9 +482,9 @@ article p{
         border: transparent;
         border-radius: 10%;
         color:#749044;
-        width: 8rem;
-        height: 3rem;
-        font-size: 23px;
+        width: 5rem;
+        height: 2rem;
+        font-size: 15px;
         font-weight: bolder;
         transition: transform .3s;
         margin-top: 3rem;
@@ -482,10 +494,10 @@ article p{
         button#analogy{
             border: transparent;
             border-radius: 10%;
-            color:#749044;
-            width: 8rem;
-            height: 3rem;
-            font-size: 23px;
+            color:#3d85c6;
+            width: 5rem;
+            height: 2rem;
+            font-size: 15px;
             font-weight: bolder;
             transition: transform .3s;
             margin-top: 3rem;
@@ -495,10 +507,10 @@ article p{
             button#anaphora{
                 border: transparent;
                 border-radius: 10%;
-                color:#749044;
-                width: 8rem;
-                height: 3rem;
-                font-size: 23px;
+                color:#b45f06;
+                width: 5rem;
+                height: 2rem;
+                font-size: 15px;
                 font-weight: bolder;
                 transition: transform .3s;
                 margin-top: 3rem;
@@ -508,10 +520,10 @@ article p{
                 button#enjambement{
                     border: transparent;
                     border-radius: 10%;
-                    color:#749044;
-                    width: 8rem;
-                    height: 3rem;
-                    font-size: 23px;
+                    color: #20124d;
+                    width: 5rem;
+                    height: 2rem;
+                    font-size: 15px;
                     font-weight: bolder;
                     transition: transform .3s;
                     margin-top: 3rem;
@@ -521,15 +533,27 @@ article p{
                     button#climax{
                         border: transparent;
                         border-radius: 10%;
-                        color:#749044;
-                        width: 8rem;
-                        height: 3rem;
-                        font-size: 23px;
+                        color:#960202;
+                        width: 5rem;
+                        height: 2rem;
+                        font-size: 15px;;
                         font-weight: bolder;
                         transition: transform .3s;
                         margin-top: 3rem;
                         
                         }
+                        button#oxymoron{
+                            border: transparent;
+                            border-radius: 10%;
+                            color:#999999;
+                            width: 5rem;
+                            height: 2rem;
+                            font-size: 15px;
+                            font-weight: bolder;
+                            transition: transform .3s;
+                            margin-top: 3rem;
+                            
+                            }
             
 
     button#similitude:hover, button#metaphor:hover{
@@ -542,9 +566,9 @@ article p{
     border: transparent;
     border-radius: 10%;  
     color:#3c8c74;
-    width: 8rem;
-    height: 3rem;
-    font-size: 23px;
+    width: 5rem;
+    height: 2rem;;
+    font-size: 15px;
     font-weight: bolder;
     transition: transform .3s;
     
