@@ -274,10 +274,34 @@
 
 </div>
 
+<div id="Sentiment"></div>
+  <div class="container_all">
+    <h2 class="title_MFW"><span class="first-letter">S</span>entiment <span class="first-letter">A</span>nalysis</h2>
+  </div>
+</div>
+
+<div id="Emotion"></div>
+  <div class="container_all">
+    <h2 class="title_MFW"><span class="first-letter">E</span>motion <span class="first-letter">D</span>etection</h2>
+  </div>
+</div>
+
 <div id="topic_modeling"></div>
 <div class="container_all">
   <h2 class="title_topic_modeling"><span class="first-letter">T</span>opic <span class="first-letter">M</span>odeling</h2>
   <p class="description_topic_modeling">We will exploit this statistical model to extract the hidden semantic structure of every text, subcorpora and global corpus.</p>
+  <div class="row">
+    <div class="col-md-12">
+      <center><h3 style="font-weight: 700;">World Cloud</h3></center>
+      <p style="font-size: 20px; width: 80%; text-align: justify; margin: auto;">The first visualization that we have decided to show is the word cloud, that is the graphic representation of the word frequencies of the individual texts taken into consideration as well as of the corpus they compose. We used "Cirrus" as a tool, via the "Voyant" platform. The word cloud positions words in such a way that the most frequently occurring terms are centrally positioned and have the largest size. The algorithm scrolls the list drawing the words as close as possible to the center of the visualization, also including small words within the spaces left by more frequent words, therefore larger. It is important to understand that the color of words and their absolute position are not significant.
+        From a graphic point of view, the choice of positioning the adjacent word clouds allows the user to keep the position of the visualization inherent to the entire corpus fixed and to explore the individual texts, divided into prose and poetry, thus giving the chance to compare them.  
+        This tool intends to introduce the user to our analysis, since in a still superficial way it allows us to observe the presence of indicative terms. For example, the presence of the term "like", which dominates the world cloud of the corpus, is found with greater relevance in those that are poetic texts and can be interpreted as a symptom of a generally figurative language rich in metaphors or similes. The contrast between terms such as white / black or death / life in Pavese's poems is also interesting, or the presence of verbs referring to writing and thought (think, write, am ...).
+        </p>
+
+    </div>
+  </div>
+
+  </div>
   <div class="row">
       <div class="col-md-4">
         <center><h3>Whole corpus</h3></center>
@@ -351,16 +375,42 @@
       </div>
   </div>
   <div class="row">
-   
-    <div class="col-md-12" style="text-align: center;">
-      <h3>SCATTERPLOT - whole corpus </h3> 
-      <p>testo</p>
+    <div class="col-md-12">
+      <center><h3 style="font-weight: 700;">Scatterplot</h3></center>
+      <p style="font-size: 20px; width: 80%; text-align: justify; margin: auto;">In this type of visualization, which makes sense, in our case, only applied to the whole corpus because it allows a comparison, each document must be conceived as a dimension, and each word frequency as a data point. In the resulting visualization, the words that are grouped are associated, that is, they follow a similar usage in the corpus. The scatterplot is presented in the main display in the tool with a legend in the top left hand corner. Hovering over a word in the graph will display more information about the frequency of occurrence of that word. We can see that the corpus of the two female authors are more similar to each other. The colours of the points in the graph represent the thematic clusters. Among these, some significant examples:
+        <ol style="font-size: 20px; width: 80%; text-align: justify; margin: auto;">
+          <li>Cluster containing words like "like, love, white, black, green, old, little, night, come, gay" which therefore involves feelings, colours and poetic-writing reality. It is mainly observable in Plath's poetry and marginally in Woolf’s;</li>
+          <li>Cluster containing words such as: "think, say, said, shall, think, writing, read, write, book", which alludes to the cultural context of the authors;</li>
+          <li>Cluster containing words like "man, things, life, work, good, new, way, time, know, world, people, feel, make", similar to a practical and purely masculine sphere, therefore present mainly in Pavese, marginal trait in female authors.</li>
+      </ol>
+        </p>
+
+    </div>
+  </div>
+  <div class="row">
+   <div class="col-md-12" style="text-align: center;">
       <iframe style='width: 1211px; height: 477px;' src='https://voyant-tools.org/tool/ScatterPlot/?lang=en&stopList=keywords-e96adfe4149db5c61c42b4c742f8a6f1&limit=62&dimensions=2&comparisonType=raw&panels=cirrus%2Creader%2Ctrends%2Csummary%2Ccontexts&corpus=54ca9d9665c736e6b58db6daccd4a9b5'></iframe> 
     </div>
    </div>
   </div>
    <br>
    <br>
+   <div class="row">
+    <div class="col-md-12">
+      <center><h3 style="font-weight: 700;">Trends</h3></center>
+      <p style="font-size: 20px; width: 80%; text-align: justify; margin: auto;">Trends is a visualization tool that represents the frequencies of terms across documents in a corpus or across segments in a document, depending on the mode. Each series in the graph is coloured according to the word it represents, at the top of the graph a legend displays which words are associated with which colours. You can click on words in the legend to toggle their visibility. Hovering over any point in the graph causes a callout box to appear with information about the point, including the word, the frequency (raw or relative depending on mode), the document or document segment. In our case, we decided to identify pairs of terms, whose occurrence or co-occurrence seemed relevant. Specifically, we focused on couples: death / suicide, love / work, woman / women, pleasure / suffer. The analysis was made for "The Business of Living", our reference text for the final ontology, alongside the general corpus, which also includes the compositions of Sylvia Plath and Virginia Woolf. The considerations with respect to the pairs of words that may be interesting and accompany the user's interpretation are:
+        <ol style="font-size: 20px; width: 80%; text-align: justify; margin: auto;">
+          <li>death / suicide start with opposite tendencies and converge in a single point at the end of Pavese's autobiographical literary production;</li>
+          <li>woman / women, in Pavese, seems to translate her relationship with the female gender. Towards the end of the production, in fact, one proceeds towards a general disillusionment towards the female gender, one detaches from the disappointment linked to the specific person;</li>
+          <li>work / love: the word work rises a lot towards the end and, when compared to love, it has a diametrically opposite trend, as if to emphasise that the presence and concentration on one implies a departure from the other;</li>
+          <li>pleasure / suffer have a very similar trend, it could be that in certain periods of life and therefore of Pavese's diary you face more these conflicting emotions;</li>
+        </ol></p>
+        <p style="font-size: 20px; width: 80%; text-align: justify; margin: auto;">In the complete corpus, suffer and pleasure appear more or less linearly in every text. In the sense that each text addresses both issues and that their presence is more or less the same in each text, it should be noted that the word suffer is more present than the word pleasure.
+        </p>
+    
+        </div>
+      </div>
+  
    <div class="row">
     <div class="col-md-6">
       <center><h3>Trends in Business of Living</h3></center>
@@ -428,11 +478,23 @@
 </div>
 <br>
 <br>
+<div class="row">
+  <div class="col-md-12">
+    <center><h3 style="font-weight: 700;">Topics</h3></center>
+    <p style="font-size: 20px; width: 80%; text-align: justify; margin: auto;">The Topics tool is designed to help you understand what topics (groups of terms) exist and how they are distributed. We decided to carry out this type of analysis for two different realities. First of all "The Business of Living" by Cesare Pavese, which, as a single document, is divided into segments of equal length for the modeling of the topic. Thereafter for the entire corpus, where topic modeling is performed on each document.
+
+      Topic modeling uses a technique called "latent Dirichlet allocation”. To keep it simple, words in each document are randomly assigned to a specified number of topics. The algorithm then goes through a series of iterations, which we chose to set at 5500, and tries to refine the model of which terms are best suited to which arguments.
+      
+      The algorithm starts by randomly assigning words to arguments and you are likely to get different results. This can be frustrating, but at the same time, there's a good chance that the more times it runs the more the arguments will have internal consistency. 
+      
+      In the table below, it is possible to observe the topics that we have extracted through the observed word clusters.
+      </p>
+
+  </div>
+</div>
 
 <div class="row">
   <div class="col-md-12" style="text-align: center;">
-    <center><h3>Corpus Termes + Topics</h3></center>
-    <p>testo</p>
     <table style="margin:auto;">
       <tr>
         <th>This Business of Living </th>

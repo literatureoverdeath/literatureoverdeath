@@ -117,7 +117,15 @@ body{
 @media all and (max-width: 650px) {
 .container {
   display:block;
-}}
+}
+div#container_critica{
+    width: 100%!important;
+}
+
+div#container_testo{
+    width: 100%!important;
+}
+}
 
 
 
