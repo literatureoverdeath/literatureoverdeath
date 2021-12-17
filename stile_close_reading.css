@@ -462,6 +462,55 @@ article p{
     box-shadow: inset 7px 10px 12px #f0f0f0;
    }
 
+   button#public{
+    border: transparent;
+    border-radius: 10%;
+    color:#3c8c74;
+    width: 5rem;
+    height: 2rem;
+    font-size: 15px;
+    font-weight: bolder;
+    transition: transform .3s;
+    margin-top: 3rem;
+    
+    }
+
+    button#work{
+        border: transparent;
+        border-radius: 10%;  
+        color:#b45f06;
+        width: 5rem;
+        height: 2rem;;
+        font-size: 15px;
+        font-weight: bolder;
+        transition: transform .3s;
+        
+        }
+        button#trauma{
+            border: transparent;
+            border-radius: 10%;
+            color:#3d85c6;
+            width: 5rem;
+            height: 2rem;
+            font-size: 15px;
+            font-weight: bolder;
+            transition: transform .3s;
+            margin-top: 3rem;
+            
+            }
+            button#love{
+                border: transparent;
+                border-radius: 10%;
+                color:#960202;
+                width: 5rem;
+                height: 2rem;
+                font-size: 15px;
+                font-weight: bolder;
+                transition: transform .3s;
+                margin-top: 3rem;
+                
+                }
+
    
 
 
