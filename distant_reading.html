@@ -14,6 +14,7 @@
       padding: 8px;
     }
 
+
   
   </style>
 
@@ -61,17 +62,14 @@
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="distant_reading.html#MFW">Most Frequent Words</a>
-          <a class="dropdown-item" href="#">Sentiment Analysis</a>
-          <a class="dropdown-item" href="#">Emotion Detection</a>
+          <a class="dropdown-item" href="distant_reading.html#Sentiment">Sentiment Analysis</a>
+          <a class="dropdown-item" href="distant_reading.html#Emotion">Emotion Detection</a>
           <a class="dropdown-item" href="distant_reading.html#topic_modeling">Topic Modeling</a>
         </div>
       </li>
 
       <li class="nav-item active">
         <a class="nav-link" href="ontology.html">Ontology</a>
-      </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="extra.html">Extra</a>
       </li>
       <li class="nav-item active">
         <a class="nav-link" href="about.html">About</a>
@@ -277,14 +275,102 @@
 <div id="Sentiment"></div>
   <div class="container_all">
     <h2 class="title_MFW"><span class="first-letter">S</span>entiment <span class="first-letter">A</span>nalysis</h2>
+    <div class="row">
+      <div class="col-md-12" style="text-align: center;">
+        <h3>Introduction to the approach in general</h3>
+        <p style="font-size: 20px; width: 80%; text-align: justify; margin: auto;">Sentiment analysis (also known as opinion mining or emotion AI) is a NLP approach concerning the domains of text analysis and computational linguistics which aims at studying affective information. 
+        </p>
+        <h3>Tools</h3>
+        <p style="font-size: 20px; width: 80%; text-align: justify; margin: auto;"> In order to complete this task, we used a Github python tutorial providing a possible way to classify textual samples with respect to their polarity toward depression and anxiety. The training corpus consisted of 3500 tweets concerning the aforementioned aspects, and the resulting trained tool takes in input textual extracts and outputs one over three possible polarity values: positive (+1), negative (-1), or neutral (0). Generally, the texts classified as “Positive” do concern depression or anxiety, but in an objective, positive, detached  way; the ones labeled as “Negative” are about the analyzed topic too, but in a more negative, involved and deeply subjective way; while the “Neutral” ones simply do not relate to the element of interest (i.e.: are not about depression at all).  
+        </p>
+        <h3>Context of our project</h3>
+        <p style="font-size: 20px; width: 80%; text-align: justify; margin: auto;">Sentiment Analysis generally aims at classifying polarity toward a specific subjective/affective topic or question. In this specific case, the model on which we based the analysis was trained on tweets about anxiety and depression. Even if the domain of training differs from the domain of application, the analogy of the focal analyzed topic allowed us to retrieve results which were relatable in most cases.</p>
+        <h3>Pros</h3>
+        <p style="font-size: 20px; width: 80%; text-align: justify; margin: auto;">Similar to what happened for the emotion detection, also in this case we exploited an AI tool to try to categorically classify our texts with respect to really complex aspects, i.e. depressive tendencies and anxiety externations. This process allowed us to compare with respect to other literary and contenutistic features the texts of our collection which presented the same polarity, in order to look for possible patterns. 
+        </p>
+        <h3>Limits</h3>
+        <p style="font-size: 20px; width: 80%; text-align: justify; margin: auto;">Even if the results we obtained are in most cases relatable, we noticed some misattributions. There are many reasons why an AI classifier can misinterpret the polarity of a given text with respect to a delicate and highly complex concept such as depression. Among the most common causes, apart from the inner specificity of the topic itself, we can mention: issues in managing negations, unusual word order, lexical modifiers and intensifiers, sarcasm and irony. 
+        </p>
+        <h3>Examples</h3>
+        <table style="margin:auto;">
+          <tr>
+            <td>The thing most feared in secret always happens. I write: oh Thou, have mercy. And then? All it takes is a little courage. The more the pain grows clear and definite, the more</td>
+            <td>-1 </td>
+          </tr>
+          <tr>
+            <td>the instinct for life asserts itself and the thought of suicide recedes.
+              It seemed easy when I thought of it. Weak women have done it. It takes humility, not pride. All this is sickening. Not words. An act. I won't write any more. 
+              </td>
+            <td>-1</td>
+          </tr>
+          <tr>
+            <td>The cadence of suffering has begun. Every evening, as dusk settles, my heart constricts until night has come.</td>
+            <td>-1</td>
+          </tr>
+          <tr>
+            <td>A trip to Tuscany and Emilia. I thought of my essay on poetry and popular culture; thought, above all, of the connection between the countryside and culture, of the natural
+              (botanical and mineral) roots of art. At Florence (Rovezzano) and in Val Pesa, Elsa-Siena-you felt why that land
+              has given birth to art. The country expresses the grace of Florence and Siena. But when a civilization is no longer linked with the country, what will be the radical sources of its culture?
+              Are we henceforward to be cut off from the influx of botany, minerals, the seasonal changes of the countryside upon art? It would seem so.
+              </td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td> Good. She has written. I have talked to her long distance. She does not want me at once. Oh well, that is fine. Work.</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>One does not kill oneself for love of a woman, but because love-any love-reveals us in our nakedness, our misery, our vulnerability, our nothingness.</td>
+            <td>1</td>
+          </tr>
+        </table>
+
+      </div>
+
+    </div>
   </div>
-</div>
+
 
 <div id="Emotion"></div>
   <div class="container_all">
     <h2 class="title_MFW"><span class="first-letter">E</span>motion <span class="first-letter">D</span>etection</h2>
   </div>
-</div>
+  <div class="row">
+    <div class="col-md-12" style="text-align: center;">
+      <h3>Introduction to the approach in general</h3>
+      <p style="font-size: 20px; width: 80%; text-align: justify; margin: auto;">emotion detection - also known as emotion recognition - consists in the process of identification of basic feelings. This can be done in many ways and starting from very different input materials; in our case, this approach is exploited in its algorithmical expression, by applying an AI system to textual input. </p>
+      <h3>Tools</h3>
+      <p style="font-size: 20px; width: 80%; text-align: justify; margin: auto;"> For the scope of our analysis, we used the emotion analyser provided in the web app exploiting the text2emotion python package to extract the basic emotions from text samples. In particular, this tool takes in input a textual string and outputs a dictionary containing five key-value pairs, whose keys are the names of the five basic emotions and the values are the relative presences in the text, expressed as percentages. Furthermore, a pie chart representing the distribution of the five different emotions is provided to give visual feedback too, in order to help those users who are not acquainted with data structures. </p>
+      <h3>Context of our project</h3>
+      <p style="font-size: 20px; width: 80%; text-align: justify; margin: auto;">For the purposes of the present project, we decided to take into account only the two most present emotions for each diary page or poem. The relation between the text sample and the extracted emotion is then represented in the ontology through two subproperties: hasPrimaryEmotion and hasSecondaryEmotion, so to allow the user to retrieve texts with similar moods. 
+      </p>
+      <h3>Pros</h3>
+      <p style="font-size: 20px; width: 80%; text-align: justify; margin: auto;">This tool allowed us to associate diary pages and poems with respect to the emotions automatically  detected, providing a rudimentary type of classification. Further, the distant reading approach grants some degree of formalization of a matter which is generally conceived as largely subjective (i.e.: moods and emotions). </p>
+      <h3>Limits</h3>
+      <p style="font-size: 20px; width: 80%; text-align: justify; margin: auto;">First of all, the limited number of basic emotions (only five) makes likely the presence of a not so determinant emotion among the two most relevant, especially in the case in which two emotions equally score the highest percentage or representativeness.  Accordingly, our ontology may present as a secondary emotion, one which is not so relevant in order to get the mood of the textual sample. </p>
+      <h3>Examples</h3>
+      <p style="font-size: 20px; width: 80%; text-align: justify; margin: auto;">As an example of the functioning of the app, we input the last page of This Business of Living. The output seems to be particularly consistent with the expectations raised while reading the textual sample:  the two most relevant emotions are surprise and sadness (whose percentages are equal), followed by fear.
+      </p>
+      <table style="margin:auto;">
+        <tr>
+          <td>The thing most feared in secret always happens.
+            I write: oh Thou, have mercy. And then? All it takes is a little courage. The more the pain grows clear and definite, the more the instinct for life asserts itself and the thought of suicide recedes.
+            It seemed easy when I thought of it. Weak women have done it. It takes humility, not pride.
+            All this is sickening. Not words. An act. I won't write any more.
+            </td>
+          <td>
+            img +
+            {
+            "Happy": 0.06,
+            "Angry": 0.06,
+            "Surprise": 0.35,
+            "Sad": 0.35,
+            "Fear": 0.18
+          }
+          </td>
+        </tr>
+      </table>
+
 
 <div id="topic_modeling"></div>
 <div class="container_all">
