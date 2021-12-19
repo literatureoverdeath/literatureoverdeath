@@ -1,0 +1,2867 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.7), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "undefined" ],
+    "baseIris" : [ "http://webprotege.stanford.edu", "http://www.w3.org/2002/07/owl", "http://www.semanticweb.org//LiteratureOverDeath", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema" ],
+    "prefixList" : {
+      "owl" : "http://www.w3.org/2002/07/owl#",
+      "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "webprotege" : "http://webprotege.stanford.edu/",
+      "xsd" : "http://www.w3.org/2001/XMLSchema#",
+      "" : "http://www.semanticweb.org/media/ontologies/2021/11/untitled-ontology-15#",
+      "xml" : "http://www.w3.org/XML/1998/namespace",
+      "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
+      "LiteratureOverDeath" : "http://www.semanticweb.org//LiteratureOverDeath#"
+    },
+    "iri" : "http://www.semanticweb.org//LiteratureOverDeath"
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "23",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "49",
+    "type" : "owl:Class"
+  }, {
+    "id" : "39",
+    "type" : "owl:Class"
+  }, {
+    "id" : "60",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "28",
+    "type" : "owl:Class"
+  }, {
+    "id" : "70",
+    "type" : "owl:Class"
+  }, {
+    "id" : "71",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "82",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "85",
+    "type" : "owl:Class"
+  }, {
+    "id" : "81",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "87",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "25",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "88",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "67",
+    "type" : "owl:Class"
+  }, {
+    "id" : "89",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "90",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "95",
+    "type" : "owl:Class"
+  }, {
+    "id" : "65",
+    "type" : "owl:Class"
+  }, {
+    "id" : "69",
+    "type" : "owl:Class"
+  }, {
+    "id" : "98",
+    "type" : "owl:Class"
+  }, {
+    "id" : "31",
+    "type" : "owl:Class"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "100",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "108",
+    "type" : "owl:Class"
+  }, {
+    "id" : "68",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "38",
+    "type" : "owl:Class"
+  }, {
+    "id" : "75",
+    "type" : "owl:Class"
+  }, {
+    "id" : "86",
+    "type" : "owl:Class"
+  }, {
+    "id" : "96",
+    "type" : "owl:Class"
+  }, {
+    "id" : "117",
+    "type" : "owl:Class"
+  }, {
+    "id" : "32",
+    "type" : "owl:Class"
+  }, {
+    "id" : "66",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "73",
+    "type" : "owl:Class"
+  }, {
+    "id" : "50",
+    "type" : "owl:Class"
+  }, {
+    "id" : "37",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "30",
+    "type" : "owl:Class"
+  }, {
+    "id" : "76",
+    "type" : "owl:Class"
+  }, {
+    "id" : "115",
+    "type" : "owl:Class"
+  }, {
+    "id" : "144",
+    "type" : "owl:Class"
+  }, {
+    "id" : "102",
+    "type" : "owl:Class"
+  }, {
+    "id" : "133",
+    "type" : "owl:Class"
+  }, {
+    "id" : "51",
+    "type" : "owl:Class"
+  }, {
+    "id" : "116",
+    "type" : "owl:Class"
+  }, {
+    "id" : "35",
+    "type" : "owl:Class"
+  }, {
+    "id" : "36",
+    "type" : "owl:Class"
+  }, {
+    "id" : "97",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "149",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "135",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "26",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "61",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "17",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "158",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "131",
+    "type" : "owl:Class"
+  }, {
+    "id" : "83",
+    "type" : "owl:Class"
+  }, {
+    "id" : "33",
+    "type" : "owl:Class"
+  }, {
+    "id" : "62",
+    "type" : "owl:Class"
+  }, {
+    "id" : "138",
+    "type" : "owl:Class"
+  }, {
+    "id" : "136",
+    "type" : "owl:Class"
+  }, {
+    "id" : "74",
+    "type" : "owl:Class"
+  }, {
+    "id" : "34",
+    "type" : "owl:Class"
+  }, {
+    "id" : "77",
+    "type" : "owl:Class"
+  }, {
+    "id" : "72",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "29",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.semanticweb.org//LiteratureOverDeath#PoemsMar50",
+    "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PoemsMar50"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#poem30mar50",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "poem30mar50"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#poem22mar50",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "poem22mar50"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#poem11mar50",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "poem11mar50"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#poem20mar50",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "poem20mar50"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#poem28mar50",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "poem28mar50"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#poem25mar50",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "poem25mar50"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#poem21mar50",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "poem21mar50"
+      }
+    } ],
+    "id" : "0",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.semanticweb.org//LiteratureOverDeath#DateAug50",
+    "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DateAug50"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#date_16_08_1950",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "date_16_08_1950"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#date_14_08_1950",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "date_14_08_1950"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#date_17_08_1950",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "date_17_08_1950"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#date_13_08_1950",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "date_13_08_1950"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#date_18_08_1950",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "date_18_08_1950"
+      }
+    } ],
+    "id" : "5",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.semanticweb.org//LiteratureOverDeath#People",
+    "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "People"
+    },
+    "subClasses" : [ "7", "8", "9", "10" ],
+    "id" : "6"
+  }, {
+    "iri" : "http://www.semanticweb.org//LiteratureOverDeath#Works",
+    "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Works"
+    },
+    "subClasses" : [ "12", "13" ],
+    "id" : "11"
+  }, {
+    "iri" : "http://www.semanticweb.org//LiteratureOverDeath#HistoricalLiteraryAuthor",
+    "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "HistoricalLiteraryAuthor"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#DAnnunzio",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "DAnnunzio"
+      }
+    } ],
+    "id" : "14",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://www.semanticweb.org//LiteratureOverDeath#Metaphor",
+    "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Metaphor"
+    },
+    "id" : "18",
+    "superClasses" : [ "19" ]
+  }, {
+    "iri" : "http://www.semanticweb.org//LiteratureOverDeath#Profession",
+    "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Profession"
+    },
+    "subClasses" : [ "20" ],
+    "id" : "10",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://www.semanticweb.org//LiteratureOverDeath#DiaryApr50",
+    "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DiaryApr50"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#page20apr50",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "page20apr50"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#page26apr50",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "page26apr50"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#page27apr50",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "page27apr50"
+      }
+    } ],
+    "id" : "21",
+    "superClasses" : [ "22" ]
+  }, {
+    "iri" : "http://www.semanticweb.org//LiteratureOverDeath#Similitude",
+    "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Similitude"
+    },
+    "id" : "23",
+    "superClasses" : [ "19" ]
+  }, {
+    "iri" : "http://www.semanticweb.org//LiteratureOverDeath#Date1950Month",
+    "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Date1950Month"
+    },
+    "subClasses" : [ "29", "5", "30", "31", "32", "33", "3", "34" ],
+    "id" : "4",
+    "superClasses" : [ "28" ]
+  }, {
+    "iri" : "http://www.semanticweb.org//LiteratureOverDeath#BiographicallyRelatedPeople",
+    "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BiographicallyRelatedPeople"
+    },
+    "subClasses" : [ "35", "36", "37", "38", "39" ],
+    "id" : "9",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://www.semanticweb.org//LiteratureOverDeath#DiaryYear",
+    "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DiaryYear"
+    },
+    "subClasses" : [ "50", "51" ],
+    "id" : "49"
+  }, {
+    "iri" : "http://www.semanticweb.org//LiteratureOverDeath#Unidentified",
+    "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Unidentified"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#Pollone",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "Pollone"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#Irene",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "Irene"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#Vanna",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "Vanna"
+      }
+    } ],
+    "id" : "39",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "http://www.semanticweb.org//LiteratureOverDeath#DiaryMar50",
+    "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DiaryMar50"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#page21mar50",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "page21mar50"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#page27mar50",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "page27mar50"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#page22mar50",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "page22mar50"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#page6mar50",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "page6mar50"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#page26mar50",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "page26mar50"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#page16mar50",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "page16mar50"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#page9mar50",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "page9mar50"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#page25mar50",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "page25mar50"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#page23mar50",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "page23mar50"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#page20mar50",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "page20mar50"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#page28mar50",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "page28mar50"
+      }
+    } ],
+    "id" : "60",
+    "superClasses" : [ "22" ]
+  }, {
+    "iri" : "http://www.semanticweb.org//LiteratureOverDeath#OwnWorks",
+    "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "OwnWorks"
+    },
+    "subClasses" : [ "65", "66", "67", "68" ],
+    "id" : "12",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "http://www.semanticweb.org//LiteratureOverDeath#DateYear1950",
+    "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DateYear1950"
+    },
+    "subClasses" : [ "4" ],
+    "id" : "28",
+    "superClasses" : [ "69" ]
+  }, {
+    "iri" : "http://www.semanticweb.org//LiteratureOverDeath#DiaryFeb50",
+    "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DiaryFeb50"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#page18feb50",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "page18feb50"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#page1feb50",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "page1feb50"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#page9feb50",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "page9feb50"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#page26feb50",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "page26feb50"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#page15feb50",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "page15feb50"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#page27feb50",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "page27feb50"
+      }
+    } ],
+    "id" : "70",
+    "superClasses" : [ "22" ]
+  }, {
+    "iri" : "http://www.semanticweb.org//LiteratureOverDeath#DateYear1949",
+    "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DateYear1949"
+    },
+    "subClasses" : [ "72" ],
+    "id" : "71",
+    "superClasses" : [ "69" ]
+  }, {
+    "iri" : "http://www.semanticweb.org//LiteratureOverDeath#Diary1950Month",
+    "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Diary1950Month"
+    },
+    "subClasses" : [ "60", "73", "74", "75", "70", "76", "77", "21" ],
+    "id" : "22",
+    "superClasses" : [ "50" ]
+  }, {
+    "iri" : "http://www.semanticweb.org//LiteratureOverDeath#PoemsYear",
+    "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PoemsYear"
+    },
+    "subClasses" : [ "83" ],
+    "id" : "82"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "16",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org//LiteratureOverDeath#DiaryDec49",
+    "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DiaryDec49"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#page30dec49",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "page30dec49"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#page29dec49",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "page29dec49"
+      }
+    } ],
+    "id" : "85",
+    "superClasses" : [ "86" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "81",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "87",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "25",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "88",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org//LiteratureOverDeath#ShortStory",
+    "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ShortStory"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#LaVigna",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "LaVigna"
+      }
+    } ],
+    "id" : "67",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "89",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "90",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org//LiteratureOverDeath#Writer",
+    "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Writer"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#Richelmy",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "Richelmy"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#Calvino",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "Calvino"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#Nat",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "Nat"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#Vittorini",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "Vittorini"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#Lalla",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "Lalla"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#DAnnunzio",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "DAnnunzio"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#Sturani",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "Sturani"
+      }
+    } ],
+    "id" : "95",
+    "superClasses" : [ "96" ]
+  }, {
+    "iri" : "http://www.semanticweb.org//LiteratureOverDeath#Poems",
+    "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Poems"
+    },
+    "id" : "65",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://www.semanticweb.org//LiteratureOverDeath#Date",
+    "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Date"
+    },
+    "subClasses" : [ "71", "28" ],
+    "id" : "69"
+  }, {
+    "iri" : "http://www.semanticweb.org//LiteratureOverDeath#Female",
+    "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Female"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#Pollone",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "Pollone"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#Irene",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "Irene"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#Renata",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "Renata"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#Vanna",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "Vanna"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#Nat",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "Nat"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#Doris",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "Doris"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#Lalla",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "Lalla"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#Connie",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "Connie"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#Lola",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "Lola"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#Dada",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "Dada"
+      }
+    } ],
+    "id" : "98",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "http://www.semanticweb.org//LiteratureOverDeath#DateJun50",
+    "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DateJun50"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#date_22_06_1950",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "date_22_06_1950"
+      }
+    } ],
+    "id" : "31",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.semanticweb.org//LiteratureOverDeath#DateMar50",
+    "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DateMar50"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#date_26_03_1950",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "date_26_03_1950"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#date_11_03_1950",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "date_11_03_1950"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#date_28_03_1950",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "date_28_03_1950"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#date_27_03_1950",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "date_27_03_1950"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#date_30_03_1950",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "date_30_03_1950"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#date_21_03_1950",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "date_21_03_1950"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#date_22_03_1950",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "date_22_03_1950"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#date_06_03_1950",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "date_06_03_1950"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#date_09_03_1950",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "date_09_03_1950"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#date_20_03_1950",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "date_20_03_1950"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#date_23_03_1950",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "date_23_03_1950"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#date_25_03_1950",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "date_25_03_1950"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#date_16_03_1950",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "date_16_03_1950"
+      }
+    } ],
+    "id" : "3",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.semanticweb.org//LiteratureOverDeath#PoemsApr50",
+    "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PoemsApr50"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#poem11apr50",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "poem11apr50"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#poem10apr50",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "poem10apr50"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#poem4apr50",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "poem4apr50"
+      }
+    } ],
+    "id" : "100",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.semanticweb.org//LiteratureOverDeath#CulturalDomain",
+    "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CulturalDomain"
+    },
+    "subClasses" : [ "102", "96" ],
+    "id" : "20",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://www.semanticweb.org//LiteratureOverDeath#Actor",
+    "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Actor"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#Doris",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "Doris"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#Connie",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "Connie"
+      }
+    } ],
+    "id" : "108",
+    "superClasses" : [ "102" ]
+  }, {
+    "iri" : "http://www.semanticweb.org//LiteratureOverDeath#Novel",
+    "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Novel"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#DiavoloSulleColline",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "DiavoloSulleColline"
+      }
+    } ],
+    "id" : "68",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://www.semanticweb.org//LiteratureOverDeath#OtherAuthorsWorks",
+    "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "OtherAuthorsWorks"
+    },
+    "id" : "13",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "http://www.semanticweb.org//LiteratureOverDeath#Friend",
+    "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Friend"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#Irene",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "Irene"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#Renata",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "Renata"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#Vanna",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "Vanna"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#Nat",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "Nat"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#Doris",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "Doris"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#Lalla",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "Lalla"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#Lola",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "Lola"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#Sturani",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "Sturani"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#UncleSandro",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "UncleSandro"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#Dada",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "Dada"
+      }
+    } ],
+    "id" : "38",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "http://www.semanticweb.org//LiteratureOverDeath#DiaryJun50",
+    "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DiaryJun50"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#page22jun50",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "page22jun50"
+      }
+    } ],
+    "id" : "75",
+    "superClasses" : [ "22" ]
+  }, {
+    "iri" : "http://www.semanticweb.org//LiteratureOverDeath#Diary1949Month",
+    "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Diary1949Month"
+    },
+    "subClasses" : [ "85" ],
+    "id" : "86",
+    "superClasses" : [ "51" ]
+  }, {
+    "iri" : "http://www.semanticweb.org//LiteratureOverDeath#LiteraryAuthor",
+    "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LiteraryAuthor"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#Doris",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "Doris"
+      }
+    } ],
+    "subClasses" : [ "115", "95", "116" ],
+    "id" : "96",
+    "superClasses" : [ "20" ]
+  }, {
+    "iri" : "http://www.semanticweb.org//LiteratureOverDeath#HistoricalFigure",
+    "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "HistoricalFigure"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#Robespierre",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "Robespierre"
+      }
+    } ],
+    "id" : "117",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://www.semanticweb.org//LiteratureOverDeath#DateApr50",
+    "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DateApr50"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#date_20_04_1950",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "date_20_04_1950"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#date_11_04_1950",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "date_11_04_1950"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#date_27_04_1950",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "date_27_04_1950"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#date_10_04_1950",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "date_10_04_1950"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#date_26_04_1950",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "date_26_04_1950"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#date_04_04_1950",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "date_04_04_1950"
+      }
+    } ],
+    "id" : "32",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.semanticweb.org//LiteratureOverDeath#Screenplay",
+    "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Screenplay"
+    },
+    "id" : "66",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://www.semanticweb.org//LiteratureOverDeath#HistoricalPeople",
+    "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "HistoricalPeople"
+    },
+    "subClasses" : [ "117", "14" ],
+    "id" : "8",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://www.semanticweb.org//LiteratureOverDeath#DiaryJan50",
+    "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DiaryJan50"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#page3jan50",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "page3jan50"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#page30jan50",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "page30jan50"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#page2jan50",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "page2jan50"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#page10jan50",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "page10jan50"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#page14jan50",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "page14jan50"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#page6jan50",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "page6jan50"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#page1jan50",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "page1jan50"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#page7jan50",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "page7jan50"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#page9jan50",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "page9jan50"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#page17jan50",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "page17jan50"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#page4jan50",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "page4jan50"
+      }
+    } ],
+    "id" : "73",
+    "superClasses" : [ "22" ]
+  }, {
+    "iri" : "http://www.semanticweb.org//LiteratureOverDeath#DiaryYear1950",
+    "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DiaryYear1950"
+    },
+    "subClasses" : [ "22" ],
+    "id" : "50",
+    "superClasses" : [ "49" ]
+  }, {
+    "iri" : "http://www.semanticweb.org//LiteratureOverDeath#Acquaintance",
+    "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Acquaintance"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#Pollone",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "Pollone"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#Richelmy",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "Richelmy"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#Calvino",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "Calvino"
+      }
+    } ],
+    "id" : "37",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "http://www.semanticweb.org//LiteratureOverDeath#Poems1950Month",
+    "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Poems1950Month"
+    },
+    "subClasses" : [ "0", "100" ],
+    "id" : "1",
+    "superClasses" : [ "83" ]
+  }, {
+    "iri" : "http://www.semanticweb.org//LiteratureOverDeath#Gender",
+    "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Gender"
+    },
+    "subClasses" : [ "98", "136" ],
+    "id" : "7",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://www.semanticweb.org//LiteratureOverDeath#DateFeb50",
+    "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DateFeb50"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#date_09_02_1950",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "date_09_02_1950"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#date_01_02_1950",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "date_01_02_1950"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#date_15_02_1950",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "date_15_02_1950"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#date_27_02_1950",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "date_27_02_1950"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#date_18_02_1950",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "date_18_02_1950"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#date_26_02_1950",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "date_26_02_1950"
+      }
+    } ],
+    "id" : "30",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.semanticweb.org//LiteratureOverDeath#DiaryAug50",
+    "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DiaryAug50"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#page13aug50",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "page13aug50"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#page18aug50",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "page18aug50"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#page16aug50",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "page16aug50"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#page14aug50",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "page14aug50"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#page17aug50",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "page17aug50"
+      }
+    } ],
+    "id" : "76",
+    "superClasses" : [ "22" ]
+  }, {
+    "iri" : "http://www.semanticweb.org//LiteratureOverDeath#Critic",
+    "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Critic"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#Calvino",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "Calvino"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#UncleSandro",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "UncleSandro"
+      }
+    } ],
+    "id" : "115",
+    "superClasses" : [ "96" ]
+  }, {
+    "iri" : "http://webprotege.stanford.edu/RHByuVtvWJH7Te6XqCNSf8",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RHByuVtvWJH7Te6XqCNSf8",
+      "undefined" : "AnalysedSentiment"
+    },
+    "individuals" : [ {
+      "iri" : "http://webprotege.stanford.edu/RD2dVx64JgugxE87EvgAE8A",
+      "baseIri" : "http://webprotege.stanford.edu",
+      "labels" : {
+        "IRI-based" : "RD2dVx64JgugxE87EvgAE8A",
+        "undefined" : "polarity_positive"
+      }
+    }, {
+      "iri" : "http://webprotege.stanford.edu/RcMMvbcDioPgkk4bLsvD9o",
+      "baseIri" : "http://webprotege.stanford.edu",
+      "labels" : {
+        "IRI-based" : "RcMMvbcDioPgkk4bLsvD9o",
+        "undefined" : "polarity_negative"
+      }
+    }, {
+      "iri" : "http://webprotege.stanford.edu/R8m6talxcvXGESLcIdPeeeZ",
+      "baseIri" : "http://webprotege.stanford.edu",
+      "labels" : {
+        "IRI-based" : "R8m6talxcvXGESLcIdPeeeZ",
+        "undefined" : "polarity_neutral"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "144"
+  }, {
+    "iri" : "http://www.semanticweb.org//LiteratureOverDeath#Cinema",
+    "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Cinema"
+    },
+    "subClasses" : [ "138", "108" ],
+    "id" : "102",
+    "superClasses" : [ "20" ]
+  }, {
+    "iri" : "http://www.semanticweb.org//LiteratureOverDeath#DateDec49",
+    "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DateDec49"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#date_29_12_1949",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "date_29_12_1949"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#date_30_12_1949",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "date_30_12_1949"
+      }
+    } ],
+    "id" : "133",
+    "superClasses" : [ "72" ]
+  }, {
+    "iri" : "http://www.semanticweb.org//LiteratureOverDeath#DiaryYear1949",
+    "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DiaryYear1949"
+    },
+    "subClasses" : [ "86" ],
+    "id" : "51",
+    "superClasses" : [ "49" ]
+  }, {
+    "iri" : "http://www.semanticweb.org//LiteratureOverDeath#Translator",
+    "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Translator"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#Richelmy",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "Richelmy"
+      }
+    } ],
+    "id" : "116",
+    "superClasses" : [ "96" ]
+  }, {
+    "iri" : "http://www.semanticweb.org//LiteratureOverDeath#Correspondent",
+    "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Correspondent"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#Richelmy",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "Richelmy"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#Calvino",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "Calvino"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#Lalla",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "Lalla"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#Vittorini",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "Vittorini"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#Connie",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "Connie"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#Sturani",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "Sturani"
+      }
+    } ],
+    "id" : "35",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "http://www.semanticweb.org//LiteratureOverDeath#Lover",
+    "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Lover"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#Connie",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "Connie"
+      }
+    } ],
+    "id" : "36",
+    "superClasses" : [ "9" ]
+  }, {
+    "instances" : 0,
+    "union" : [ "82", "49" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "97"
+  }, {
+    "instances" : 0,
+    "union" : [ "82", "49" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "149"
+  }, {
+    "instances" : 0,
+    "union" : [ "82", "49" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "135"
+  }, {
+    "instances" : 0,
+    "union" : [ "82", "49" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "26"
+  }, {
+    "instances" : 0,
+    "union" : [ "82", "49" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "61"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "17",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "158",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org//LiteratureOverDeath#Analogy",
+    "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Analogy"
+    },
+    "id" : "131",
+    "superClasses" : [ "19" ]
+  }, {
+    "iri" : "http://www.semanticweb.org//LiteratureOverDeath#PoemsYear1950",
+    "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PoemsYear1950"
+    },
+    "subClasses" : [ "1" ],
+    "id" : "83",
+    "superClasses" : [ "82" ]
+  }, {
+    "iri" : "http://www.semanticweb.org//LiteratureOverDeath#DateJul50",
+    "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DateJul50"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#date_20_07_1950",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "date_20_07_1950"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#date_14_07_1950",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "date_14_07_1950"
+      }
+    } ],
+    "id" : "33",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://webprotege.stanford.edu/R9RTZSZDjQq8miyuOQuhmHD",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "R9RTZSZDjQq8miyuOQuhmHD",
+      "undefined" : "DetectedEmotion"
+    },
+    "individuals" : [ {
+      "iri" : "http://webprotege.stanford.edu/R93rIn8JSF5UD9gIrcS7VLl",
+      "baseIri" : "http://webprotege.stanford.edu",
+      "labels" : {
+        "IRI-based" : "R93rIn8JSF5UD9gIrcS7VLl",
+        "undefined" : "emotion_fear"
+      }
+    }, {
+      "iri" : "http://webprotege.stanford.edu/R9dU1mPg6djU36JLqFW494p",
+      "baseIri" : "http://webprotege.stanford.edu",
+      "labels" : {
+        "IRI-based" : "R9dU1mPg6djU36JLqFW494p",
+        "undefined" : "emotion_anger"
+      }
+    }, {
+      "iri" : "http://webprotege.stanford.edu/R65PrsnbmA2wMZbkJzQI97",
+      "baseIri" : "http://webprotege.stanford.edu",
+      "labels" : {
+        "IRI-based" : "R65PrsnbmA2wMZbkJzQI97",
+        "undefined" : "emotion_saddness"
+      }
+    }, {
+      "iri" : "http://webprotege.stanford.edu/R9egMSs8CkasrCWEAJLKZ4x",
+      "baseIri" : "http://webprotege.stanford.edu",
+      "labels" : {
+        "IRI-based" : "R9egMSs8CkasrCWEAJLKZ4x",
+        "undefined" : "emotion_happiness"
+      }
+    }, {
+      "iri" : "http://webprotege.stanford.edu/RwG7dZKjd7A9xPdsLYpAhH",
+      "baseIri" : "http://webprotege.stanford.edu",
+      "labels" : {
+        "IRI-based" : "RwG7dZKjd7A9xPdsLYpAhH",
+        "undefined" : "emotion_surprise"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "62"
+  }, {
+    "iri" : "http://www.semanticweb.org//LiteratureOverDeath#FilmDirector",
+    "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FilmDirector"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#Dada",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "Dada"
+      }
+    } ],
+    "id" : "138",
+    "superClasses" : [ "102" ]
+  }, {
+    "iri" : "http://www.semanticweb.org//LiteratureOverDeath#Male",
+    "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Male"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#Robespierre",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "Robespierre"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#Richelmy",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "Richelmy"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#Calvino",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "Calvino"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#Vittorini",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "Vittorini"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#Sturani",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "Sturani"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#DAnnunzio",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "DAnnunzio"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#UncleSandro",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "UncleSandro"
+      }
+    } ],
+    "id" : "136",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "http://www.semanticweb.org//LiteratureOverDeath#DiaryMay50",
+    "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DiaryMay50"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#page13may50",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "page13may50"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#page12may50",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "page12may50"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#page16may50",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "page16may50"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#page8may50",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "page8may50"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#page27may50",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "page27may50"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#page10may50",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "page10may50"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#page30may50",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "page30may50"
+      }
+    } ],
+    "id" : "74",
+    "superClasses" : [ "22" ]
+  }, {
+    "iri" : "http://www.semanticweb.org//LiteratureOverDeath#DateMay50",
+    "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DateMay50"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#date_27_05_1950",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "date_27_05_1950"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#date_10_05_1950",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "date_10_05_1950"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#date_08_05_1950",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "date_08_05_1950"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#date_16_05_1950",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "date_16_05_1950"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#date_13_05_1950",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "date_13_05_1950"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#date_30_05_1950",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "date_30_05_1950"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#date_12_05_1950",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "date_12_05_1950"
+      }
+    } ],
+    "id" : "34",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.semanticweb.org//LiteratureOverDeath#DiaryJul50",
+    "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DiaryJul50"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#page14jul50",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "page14jul50"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#page20jul50",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "page20jul50"
+      }
+    } ],
+    "id" : "77",
+    "superClasses" : [ "22" ]
+  }, {
+    "iri" : "http://www.semanticweb.org//LiteratureOverDeath#Date1949Month",
+    "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Date1949Month"
+    },
+    "subClasses" : [ "133" ],
+    "id" : "72",
+    "superClasses" : [ "71" ]
+  }, {
+    "iri" : "http://www.semanticweb.org//LiteratureOverDeath#RhetoricalFigures",
+    "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RhetoricalFigures"
+    },
+    "subClasses" : [ "131", "18", "23" ],
+    "id" : "19"
+  }, {
+    "iri" : "http://www.semanticweb.org//LiteratureOverDeath#DateJan50",
+    "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DateJan50"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#date_02_01_1950",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "date_02_01_1950"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#date_01_01_1950",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "date_01_01_1950"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#date_07_01_1950",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "date_07_01_1950"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#date_30_01_1950",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "date_30_01_1950"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#date_10_01_1950",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "date_10_01_1950"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#date_04_01_1950",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "date_04_01_1950"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#date_14_01_1950",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "date_14_01_1950"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#date_17_01_1950",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "date_17_01_1950"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#date_06_01_1950",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "date_06_01_1950"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#date_03_01_1950",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "date_03_01_1950"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org//LiteratureOverDeath#date_09_01_1950",
+      "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+      "labels" : {
+        "IRI-based" : "date_09_01_1950"
+      }
+    } ],
+    "id" : "29",
+    "superClasses" : [ "4" ]
+  } ],
+  "property" : [ {
+    "id" : "2",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "15",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "24",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "40",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "41",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "42",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "52",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "53",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "54",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "55",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "56",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "57",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "58",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "59",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "44",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "78",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "79",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "80",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "84",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "91",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "92",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "93",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "94",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "45",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "99",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "101",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "103",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "104",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "105",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "106",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "107",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "109",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "110",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "111",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "112",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "113",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "114",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "118",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "119",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "120",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "121",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "122",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "123",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "124",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "125",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "126",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "127",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "128",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "129",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "130",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "132",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "134",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "48",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "137",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "139",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "140",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "141",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "142",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "143",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "145",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "146",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "147",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "148",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "63",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "64",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "27",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "46",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "150",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "151",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "152",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "153",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "154",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "155",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "156",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "157",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "159",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "160",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "47",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "43",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "161",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "162",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "163",
+    "type" : "rdfs:SubClassOf"
+  } ],
+  "propertyAttribute" : [ {
+    "range" : "4",
+    "domain" : "3",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "2"
+  }, {
+    "iri" : "http://www.semanticweb.org//LiteratureOverDeath#firstName",
+    "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "firstName"
+    },
+    "domain" : "16",
+    "attributes" : [ "datatype" ],
+    "id" : "15"
+  }, {
+    "iri" : "http://www.semanticweb.org//LiteratureOverDeath#containedInPoem",
+    "inverse" : "27",
+    "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+    "range" : "26",
+    "label" : {
+      "IRI-based" : "containedInPoem"
+    },
+    "domain" : "25",
+    "attributes" : [ "object" ],
+    "id" : "24"
+  }, {
+    "range" : "4",
+    "domain" : "33",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "40"
+  }, {
+    "range" : "4",
+    "domain" : "32",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "41"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "range" : "16",
+    "label" : {
+      "IRI-based" : "topObjectProperty"
+    },
+    "domain" : "16",
+    "subproperty" : [ "43", "44", "45", "46", "47", "48" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "42"
+  }, {
+    "range" : "4",
+    "domain" : "5",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "52"
+  }, {
+    "range" : "4",
+    "domain" : "29",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "53"
+  }, {
+    "range" : "4",
+    "domain" : "31",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "54"
+  }, {
+    "range" : "4",
+    "domain" : "30",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "55"
+  }, {
+    "range" : "11",
+    "domain" : "12",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "56"
+  }, {
+    "range" : "6",
+    "domain" : "10",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "57"
+  }, {
+    "range" : "10",
+    "domain" : "20",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "58"
+  }, {
+    "range" : "11",
+    "domain" : "13",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "59"
+  }, {
+    "iri" : "http://webprotege.stanford.edu/RBZirVK8Ejb0FOqFnW5TdsJ",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "range" : "62",
+    "label" : {
+      "IRI-based" : "RBZirVK8Ejb0FOqFnW5TdsJ",
+      "undefined" : "hasEmotion"
+    },
+    "superproperty" : [ "42" ],
+    "domain" : "61",
+    "subproperty" : [ "63", "64" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "44"
+  }, {
+    "range" : "6",
+    "domain" : "8",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "78"
+  }, {
+    "range" : "6",
+    "domain" : "7",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "79"
+  }, {
+    "iri" : "http://www.semanticweb.org//LiteratureOverDeath#hasText",
+    "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+    "range" : "81",
+    "label" : {
+      "IRI-based" : "hasText"
+    },
+    "domain" : "16",
+    "comment" : {
+      "undefined" : "Represents the local text inside the poem corresponding to the rhetorical figure."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "80"
+  }, {
+    "range" : "6",
+    "domain" : "9",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "84"
+  }, {
+    "iri" : "http://www.semanticweb.org//LiteratureOverDeath#hasAuthor",
+    "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+    "range" : "16",
+    "label" : {
+      "IRI-based" : "hasAuthor"
+    },
+    "domain" : "16",
+    "attributes" : [ "object" ],
+    "id" : "91"
+  }, {
+    "range" : "22",
+    "domain" : "76",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "92"
+  }, {
+    "range" : "22",
+    "domain" : "21",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "93"
+  }, {
+    "range" : "22",
+    "domain" : "77",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "94"
+  }, {
+    "iri" : "http://www.semanticweb.org//LiteratureOverDeath#mentionedIn",
+    "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+    "range" : "97",
+    "label" : {
+      "IRI-based" : "mentionedIn"
+    },
+    "superproperty" : [ "42" ],
+    "domain" : "6",
+    "attributes" : [ "object" ],
+    "id" : "45"
+  }, {
+    "iri" : "http://www.semanticweb.org//LiteratureOverDeath#nickname",
+    "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+    "range" : "89",
+    "label" : {
+      "IRI-based" : "nickname"
+    },
+    "domain" : "16",
+    "attributes" : [ "datatype" ],
+    "id" : "99"
+  }, {
+    "range" : "22",
+    "domain" : "74",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "101"
+  }, {
+    "range" : "22",
+    "domain" : "73",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "103"
+  }, {
+    "range" : "22",
+    "domain" : "70",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "104"
+  }, {
+    "range" : "22",
+    "domain" : "75",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "105"
+  }, {
+    "iri" : "http://www.semanticweb.org//LiteratureOverDeath#abbreviatedName",
+    "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+    "range" : "90",
+    "label" : {
+      "IRI-based" : "abbreviatedName"
+    },
+    "domain" : "16",
+    "attributes" : [ "datatype" ],
+    "id" : "106"
+  }, {
+    "range" : "28",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "107"
+  }, {
+    "range" : "12",
+    "domain" : "68",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "109"
+  }, {
+    "range" : "22",
+    "domain" : "60",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "110"
+  }, {
+    "range" : "71",
+    "domain" : "72",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "111"
+  }, {
+    "range" : "12",
+    "domain" : "67",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "112"
+  }, {
+    "range" : "12",
+    "domain" : "66",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "113"
+  }, {
+    "iri" : "http://www.semanticweb.org//LiteratureOverDeath#hasDateValue",
+    "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+    "range" : "88",
+    "label" : {
+      "IRI-based" : "hasDateValue"
+    },
+    "domain" : "16",
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "114"
+  }, {
+    "range" : "12",
+    "domain" : "65",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "118"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#topDataProperty",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "range" : "87",
+    "label" : {
+      "IRI-based" : "topDataProperty"
+    },
+    "domain" : "16",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "119"
+  }, {
+    "range" : "9",
+    "domain" : "39",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "120"
+  }, {
+    "range" : "9",
+    "domain" : "38",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "121"
+  }, {
+    "range" : "49",
+    "domain" : "51",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "122"
+  }, {
+    "range" : "49",
+    "domain" : "50",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "123"
+  }, {
+    "range" : "9",
+    "domain" : "35",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "124"
+  }, {
+    "range" : "4",
+    "domain" : "34",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "125"
+  }, {
+    "range" : "9",
+    "domain" : "37",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "126"
+  }, {
+    "range" : "9",
+    "domain" : "36",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "127"
+  }, {
+    "range" : "83",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "128"
+  }, {
+    "range" : "51",
+    "domain" : "86",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "129"
+  }, {
+    "range" : "19",
+    "domain" : "131",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "130"
+  }, {
+    "range" : "72",
+    "domain" : "133",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "132"
+  }, {
+    "range" : "102",
+    "domain" : "108",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "134"
+  }, {
+    "iri" : "http://www.semanticweb.org//LiteratureOverDeath#hasDate",
+    "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+    "range" : "69",
+    "label" : {
+      "IRI-based" : "hasDate"
+    },
+    "superproperty" : [ "42" ],
+    "domain" : "135",
+    "attributes" : [ "functional", "object" ],
+    "id" : "48"
+  }, {
+    "range" : "102",
+    "domain" : "138",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "137"
+  }, {
+    "range" : "7",
+    "domain" : "136",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "139"
+  }, {
+    "range" : "1",
+    "domain" : "0",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "140"
+  }, {
+    "range" : "50",
+    "domain" : "22",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "141"
+  }, {
+    "range" : "7",
+    "domain" : "98",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "142"
+  }, {
+    "range" : "1",
+    "domain" : "100",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "143"
+  }, {
+    "range" : "96",
+    "domain" : "116",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "145"
+  }, {
+    "range" : "96",
+    "domain" : "95",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "146"
+  }, {
+    "range" : "8",
+    "domain" : "14",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "147"
+  }, {
+    "range" : "8",
+    "domain" : "117",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "148"
+  }, {
+    "iri" : "http://webprotege.stanford.edu/R8f2iFkpHrXT0L84iAS73jg",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "range" : "16",
+    "label" : {
+      "IRI-based" : "R8f2iFkpHrXT0L84iAS73jg",
+      "undefined" : "hasPrimaryEmotion"
+    },
+    "superproperty" : [ "44" ],
+    "domain" : "16",
+    "attributes" : [ "functional", "external", "object" ],
+    "id" : "63"
+  }, {
+    "iri" : "http://webprotege.stanford.edu/R96ybbsemYpUMfrp8nfbuVc",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "range" : "16",
+    "label" : {
+      "IRI-based" : "R96ybbsemYpUMfrp8nfbuVc",
+      "undefined" : "hasSecondaryEmotion"
+    },
+    "superproperty" : [ "44" ],
+    "domain" : "16",
+    "attributes" : [ "functional", "external", "object" ],
+    "id" : "64"
+  }, {
+    "iri" : "http://www.semanticweb.org//LiteratureOverDeath#containsVerse",
+    "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+    "range" : "25",
+    "label" : {
+      "IRI-based" : "containsVerse"
+    },
+    "domain" : "26",
+    "attributes" : [ "object" ],
+    "id" : "27"
+  }, {
+    "iri" : "http://webprotege.stanford.edu/R7S52I0JsT5gHIhtrHXNiuZ",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "range" : "144",
+    "label" : {
+      "IRI-based" : "R7S52I0JsT5gHIhtrHXNiuZ",
+      "undefined" : "hasSentiment"
+    },
+    "superproperty" : [ "42" ],
+    "domain" : "149",
+    "attributes" : [ "functional", "external", "object" ],
+    "id" : "46"
+  }, {
+    "range" : "86",
+    "domain" : "85",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "150"
+  }, {
+    "range" : "20",
+    "domain" : "96",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "151"
+  }, {
+    "range" : "96",
+    "domain" : "115",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "152"
+  }, {
+    "range" : "69",
+    "domain" : "71",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "153"
+  }, {
+    "range" : "82",
+    "domain" : "83",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "154"
+  }, {
+    "range" : "20",
+    "domain" : "102",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "155"
+  }, {
+    "range" : "69",
+    "domain" : "28",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "156"
+  }, {
+    "range" : "49",
+    "domain" : "82",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "157"
+  }, {
+    "range" : "136",
+    "domain" : "98",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "159"
+  }, {
+    "range" : "71",
+    "domain" : "28",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "160"
+  }, {
+    "iri" : "http://www.semanticweb.org//LiteratureOverDeath#knows",
+    "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "knows"
+    },
+    "superproperty" : [ "42" ],
+    "domain" : "6",
+    "attributes" : [ "object", "symmetric" ],
+    "id" : "47"
+  }, {
+    "iri" : "http://www.semanticweb.org//LiteratureOverDeath#hasCorrespondenceWith",
+    "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+    "range" : "16",
+    "label" : {
+      "IRI-based" : "hasCorrespondenceWith"
+    },
+    "superproperty" : [ "42" ],
+    "domain" : "16",
+    "attributes" : [ "object", "symmetric" ],
+    "id" : "43"
+  }, {
+    "iri" : "http://www.semanticweb.org//LiteratureOverDeath#lastName",
+    "baseIri" : "http://www.semanticweb.org//LiteratureOverDeath",
+    "range" : "158",
+    "label" : {
+      "IRI-based" : "lastName"
+    },
+    "domain" : "16",
+    "attributes" : [ "datatype" ],
+    "id" : "161"
+  }, {
+    "range" : "19",
+    "domain" : "23",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "162"
+  }, {
+    "range" : "19",
+    "domain" : "18",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "163"
+  } ]
+}
