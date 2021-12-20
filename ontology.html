@@ -72,10 +72,140 @@
   <div class="row" style="text-align: center;">
    
       <div class="col-md-12" style="width: 100%; height: 100%;">
-        <p>ciao</p>
-      <iframe style="width: 90%; height: 90vh;" src="https://literatureoverdeath.github.io/literatureoverdeath/webvowl_1.1.7/index.html#LiteratureOverDeath"></iframe>
+        <h3>PaveseOverDeath Ontology</h3>
+      <iframe style="width: 90%; height: 90vh;" src="https://literatureoverdeath.github.io/literatureoverdeath/webvowl_1.1.7/index.html#PaveseOverDeath_Ontology"></iframe>
+      <button style="font-family: 'Another Typewriter';"> <a href="PaveseOverDeath.zip">Download the ontology in xml/RDF</a></button>
       </div>
     
+  </div>
+  <div class="row" style="text-align: center;">
+    <div class="col-md-12" style="width: 100%; height: 100%;">
+      <br>
+      <br>
+      <h3>Introduction</h3>
+      <p style="font-size: 20px; width: 80%; text-align: justify; margin: auto;">PaveseOverDeath is an ontology based on Cesare Pavese's late literary production, that is, what he wrote in the months immediately preceding his suicide. With the aim of connecting Pavese's biography and his poetic and prosaic writings, we have chosen to include and represent in the present ontology the factors that contribute to the author's depression. To make our analysis more effective, we decided to take advantage of the comparison with two other writers who have experienced similar emotional states and who share an existential unhappiness that also transpires in their literary production.
+        The elements represented in the ontology derive mainly from textual analysis (exploiting both close and distant reading). However, the profound connection between the author's depressive state and his later works justifies the inclusion in the ontology of elements derived from a broader analysis, including events and people who have had a decisive impact on the life of the author.
+        Although the preliminary analysis is also largely based on the productions of Plath and Woolf, for the specific purpose of the realization of the PaveseOverDeath ontology it was decided not to include those classes and properties that would not have had a factual connection with the specific investigation on Pavese on which we decided to base our direct analysis. Indeed, we conducted our whole work with the aim of realizing a general framework which could be easily reused to describe the connection between life and literary productions of authors who suffered from similar psychological conditions. However, we also kept in mind the goal of representing some specific traits of Pavese’s signature. 
+        </p>
+        <br>
+        <br>
+      <h3>Domain and Focus</h3>
+      <p style="font-size: 20px; width: 80%; text-align: justify; margin: auto;">​​Our focus is to describe the relationship between biographical, historical, social and cultural events on the one hand and the literary production of a particular author, both in prose and poetry on the other. To do this, we started from the literary productions of three authors who shared some particular characteristics:
+      </p>
+      <ol style="font-size: 20px; width: 80%; text-align: justify; margin: auto;">
+        <li>They lived in the 20th century</li>
+        <li>They suffered from depression</li>
+        <li> They committed suicide</li>
+        <li>They wrote a personal diary</li>
+        <li> They have composed poetic texts</li>
+      </ol>
+      <p style="font-size: 20px; width: 80%; text-align: justify; margin: auto;">Then, through distant reading and close reading analysis, we tried to define both the stylistic features and the themes that emerged from the productions of all the authors, and the elements that instead differentiate the production of one from the other.
+        One of the main reasons why we have chosen to consider poetry and prose together is the presence of chronological references: dates in both types of production. This trait, in fact, has allowed us to relate the autobiography with the collections of poems, so as to be able to verify the hypothesis that the same topic or event could be represented more or less in synchrony in both productions.
+        For the development of our ontology, we decided to focus on Cesare Pavese's diary (This Business of Living) and on the poetic production collected in Selected Poems, with a specific focus on the writings composed in the months preceding his suicide.
+        </p>
+        <br>
+        <br>
+      <h3>Competence Questions</h3>
+      <ol style="font-size: 20px; width: 80%; text-align: justify; margin: auto;">
+        <li>Does Pavese present similar topics/events/emotions both in prose and in poetry produced at a certain moment of his life?
+        </li>
+        <li>Which biographical  facts are depicted in the production of an author who suffered from depression? (i.e.: How far does depression affect the literary production of an author)
+        </li>
+        <li>Which psychological states does the author associate with the biographical facts he exposes in his works? How far is it evident from their literary production? How is the influence manifested? 
+        </li>
+        <li>Which rhetorical expressions are most relevant in the last poetry production of Pavese? Are there any patterns which could be highlighted? 
+        </li>
+        <li>Can any pattern be highlighted between results obtained with sentiment analysis and emotion detection in prose and poetry production composed in the same days of the author’s life?
+        </li>
+      </ol>
+      <br>
+      <br>
+      <h3>Ontology Querying Opportunities</h3>
+      <ol style="font-size: 20px; width: 80%; text-align: justify; margin: auto;">
+        <li>given a date, the user can retrieve poems/diary pages written during the same day (and consequently furtherly evaluate the presence of any kind of analogies: e.g.: does the author mention the same person both in prose and in poetry production on the same date? Do his productions share the same primary emotions? the same polarity toward depression? some overlapping topics? )
+        </li>
+        <li>the user can retrieve texts of an author’s production sharing the same polarity toward depression (according to sentiment analysis)
+        </li>
+        <li>the user can retrieve texts of an author’s production sharing the same primary/secondary emotions (according to emotion detection)
+        </li>
+        <li>the user can retrieve texts of an author’s production sharing the same rhetorical choices (annotated through close reading)
+        </li>
+        <li>the user can spot patterns between mixed close and distant reading elements in a diary page or in a poem (and, consequently, to see if there is any relation between -e.g.- a defined polarity toward depression and a particularly biographical event)
+        </li>
+        <li>the user can analyze trends in any of the aforementioned features (tagged either from close or distant reading) in a specific period of the author’s production, by filtering the textual extracts by a given date range 
+        </li>
+        <li>the user can look for connections between biographical events and annexes influences on  the author’s psychological states depicted in specific diary pages.
+        </li>
+      </ol>
+      <br>
+      <br>
+      <h3>Approach</h3>
+      <p style="font-size: 20px; width: 80%; text-align: justify; margin: auto;">In designing the class hierarchy of the ontology we started by instantiating the individuals representing the diary pages of the last year of Pavese’s life, his late poems and the dates in which they were written. Then, bottom-up, we proceeded to build the class and superclasses above them. These classes and their instances have allowed us to link the poems to the diary pages via a property, namely :hasDate, which takes as range the class containing the dates; each date is therefore linked to either a diary page, a poem or both. 
+        The classes describing the rest of our knowledge domain, we built them mainly by following a middle-out approach: we first designed the classes in an intermediate level of the hierarchy, inspired by the results of close and distant reading analysis, and progressively further divided them into subclasses in one direction, and grouped them into superclasses in the other direction. 
+        </p>
+      <br>
+      <br>
+      <h3>Properties and Constraints</h3>
+      <p style="font-size: 20px; width: 80%; text-align: justify; margin: auto;">For the realization of the ontology, we analyzed pre-existing ontologies that helped us to develop a critical vision on how to approach the construction of our own. However, after careful reflection we came to the conclusion that it was not possible to directly insert existing realities, that is, to directly import other ontologies, as they are extremely specific and binding. Our ontology therefore wanted to draw inspiration but create specific classes that could reflect the complexity of our investigation, so as to create a path defined according to the chosen scheme. The sources from which we drew inspiration and fundamental contributions are listed in the "sources" section.
+      </p>
+      <br>
+      <br>
+      <h3>Rereferences</h3>
+      <ol style="font-size: 20px; width: 80%; text-align: justify; margin: auto;">
+        <li> Ontologies and Vocabularies
+          <ul><span style="font-weight: bolder;">Moods and Emotions</span>
+            <li>framECO - A frame-based emotions context ontology (https://saroppini.github.io/framECO/#project) 
+            </li>
+            <li>The EmOCA 0.01 http://ns.inria.fr/emoca/
+            </li>
+            <li>WordNet Domains (https://wndomains.fbk.eu/wnaffect.html )</li>
+          </ul>
+          <ul><span style="font-weight: bolder;">Literary works</span>
+            <li>CoSMO Project (https://mangiafrangette.github.io/cosmo/index.html)
+            </li>
+            <li>DIV-O Knowledge Representation and Extraction of Divina Commedia's canti literay analysis. (https://div-o.github.io/index.html)</li>
+          </ul>
+          <ul><span style="font-weight: bolder;">Topics representation  in literary productions</span>
+            <li>CoSMO Project(https://mangiafrangette.github.io/cosmo/index.html)
+            </li>
+          </ul>
+          <ul><span style="font-weight: bolder;">Rhetorical analysis</span>
+            <li>http://bakulf.github.io/raop/
+            </li>
+          </ul>
+          <ul><span style="font-weight: bolder;">Historical events</span>
+            <li>LODE: An ontology for Linking Open Descriptions of Events (https://linkedevents.org/ontology/) </li>
+          </ul>
+          <ul><span style="font-weight: bolder;">Biographical events and relations</span>
+            <li>BIO: A vocabulary for biographical information (https://vocab.org/bio/)</li>
+            <li>An OWL Ontology for Biographical Knowledge. Representing Time-Dependent Factual Knowledge (http://ceur-ws.org/Vol-1399/paper16.pdf)</li>
+            <li>Friend of a Friend vocabulary (foaf) (https://lov.linkeddata.es/dataset/lov/vocabs/foaf)
+            </li>
+            <li>RELATIONSHIP: A vocabulary for describing relationships between people (http://purl.org/vocab/relationship/)
+            </li>
+          </ul>
+          <ul><span style="font-weight: bolder;">Reciprocal influences between artistic productions and moods</span>
+            <li>Submissions:Experience & Observation (http://ontologydesignpatterns.org/wiki/Submissions:Experience_%26_Observation)
+            </li>
+          </ul>
+        </li>
+        <li>Sources on Ontology Development
+          <ul style="text-align: left;">
+            <li>A Practical Guide to Building OWL Ontologies Using Protégé 5.5 and Plugins (https://www.researchgate.net/publication/351037551_A_Practical_Guide_to_Building_OWL_Ontologies_Using_Protege_55_and_Plugins) </li>
+            <li>Ontology Development 101: A Guide to Creating Your First Ontology (https://protege.stanford.edu/publications/ontology_development/ontology101.pdf)
+            </li>
+            <li>Linked Data Engineering Course  by Prof. Dr. Harald Sack (https://open.hpi.de/courses/semanticweb2016/items/7A9057HEv8FFHsyGjXDuc5 )
+            </li>
+          </ul>
+        </li>
+        <li>Ontology Hosting and Visualization Service
+          <ul>
+            <li>WebVOWL: Web-based Visualization of Ontologies (http://vowl.visualdataweb.org/webvowl.html)
+            </li>
+          </ul>
+        </li>
+      </ol>
+    </div>
   </div>
 </div>
 
